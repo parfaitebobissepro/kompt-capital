@@ -6,6 +6,13 @@
 
 /** Variables **/
 
+/* Temp */
+main{
+    min-height: 115vh;
+}
+
+/* end Temp */
+
 :root {
     /* app-fonts */
     --app-font-family: "Poppins", "system-ui", "Sans-Serif";
