@@ -40,6 +40,8 @@ main{
     --app-color-background-gray-ligth: rgb(245, 245, 245);
     /* app-border-raduis */
     --app-border-button-raduis-default: 4px;
+    /* --app-global-padding-default */
+    --app-global-padding-default: 50px;
 }
 
 * {
@@ -259,9 +261,22 @@ b {
     }
 }
 
+
+
+
+
+/** Images **/
+
+.largers-images{
+    /* max-height: 901px; */
+    max-width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+}
+
 @media (min-width: 768px) {
     .constraint-box {
-        max-width: 704px;
+        /* max-width: 704px; */
         padding-left: 0;
         padding-right: 0;
     }
@@ -288,7 +303,7 @@ b {
 
 @media (min-width: 992px) {
     .constraint-box {
-        max-width: 936px;
+        /* max-width: 936px; */
         padding-left: 0;
         padding-right: 0;
     }
@@ -299,13 +314,14 @@ b {
         max-width: 1920px;
         padding-left: 0;
         padding-right: 0;
+       
     }
 }
 
-/** Images **/
 
 
-.largers-images{
-    max-height: 901px;
-    max-width: 100%;
+@media (min-width: 2000px) {
+    .largers-images{
+        min-height: min(901px,100vh);
+    }
 }

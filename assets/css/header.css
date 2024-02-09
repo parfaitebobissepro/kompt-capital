@@ -26,13 +26,14 @@ header[role="banner"].sticky::before {
     position: fixed;
     background: var(--app-background-default);
     transition: opacity 300ms;
-    border-bottom: 1px solid var(--app-color-border-gray-ligth);
+    /* border-bottom: 1px solid var(--app-color-border-gray-ligth); */
     max-height: 63px;
 }
 
 #header-container-logo {    
     z-index: 0;
     padding-top: 8px;
+    min-width: 252px;
 }
 
 #header-container-logo .logo {
@@ -215,9 +216,52 @@ header .navbar {
     /* transition: height 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
 }
 
+header .navbar-nav .nav-item{
+    min-width: 122px;
+    text-align: center;
+}
+
+header .navbar-nav .nav-item a{
+    font-weight: 700;
+}
+
+header:not(.sticky) .navbar-nav .nav-item:nth-of-type(3) a,header:not(.sticky) .navbar-nav .nav-item:nth-of-type(4) a{
+    color: var(--app-color-text-accent);
+}
+
+header:not(.sticky) .navbar-nav .nav-item:nth-of-type(3) a:hover,header:not(.sticky) .navbar-nav .nav-item:nth-of-type(4) a:hover{
+    color: var(--app-color-text-primary);
+}
+
 .nav-item.active .nav-sub-menu-responsive {
     /* max-height: min-content; */
     transition: max-height 0.25s ease-in;
+}
+
+
+.rigth-bloc-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    display: none;
+    min-width: 252px;
+}
+
+.rigth-bloc-header .list-lang-type{
+    margin-right: 85px;
+}
+
+.rigth-bloc-header .search-button {
+    margin-right: 23px;
+}
+
+.sticky .rigth-bloc-header svg path{
+    fill: var(--app-color-text-primary);
+}
+
+.sticky .rigth-bloc-header a:hover svg path{
+    fill: var(--app-color-primary);
 }
 
 @media (min-width: 375px) {
@@ -236,14 +280,16 @@ header .navbar {
         height: 1.5em;
         position: relative;
     }
-    .navbar-collapse-contact-link {
-        display: none;
-    }
 }
 
 @media (min-width: 768px) {
     #header-container-logo .logo {
         width: 210px;
+    }
+    .rigth-bloc-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
@@ -262,7 +308,15 @@ header .navbar {
     }
     header .constraint-box {
         max-width: 1920px;
-        padding-left: 0;
-        padding-right: 0;
+    }
+}
+
+@media (max-width: 1170px) {
+    .rigth-bloc-header .list-lang-type{
+        margin-right: 20px;
+    }
+
+    .rigth-bloc-header, #header-container-logo{
+        min-width: 186px;
     }
 }

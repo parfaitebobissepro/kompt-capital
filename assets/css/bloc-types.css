@@ -12,7 +12,7 @@ Example:homepage first bloc
 }
 
 .bloc-type-twins>.bloc-type-twins-first {
-    margin-right: 2rem;
+    padding-right: 2rem;
 }
 
 .bloc-type-twins>.bloc-type-twins-second {
@@ -56,7 +56,7 @@ Example:homepage first bloc
 }
 
 .bloc-type-twins-large>.bloc-type-twins-large-first {
-    margin-right: 2rem;
+    /* padding-right: 2rem; */
     flex: 1;
 }
 
@@ -234,6 +234,7 @@ Example:homepage fifth bloc
 .list-lang-type {
     list-style: none;
     display: inline-block;
+    margin-bottom: 0;
 }
 
 
@@ -250,4 +251,9 @@ Example:homepage fifth bloc
 
 .list-lang-type-item.active a{
     font-weight: 700;
+}
+
+.padding-default{
+    padding-left: var(--app-global-padding-default);
+    padding-right: var(--app-global-padding-default);
 }

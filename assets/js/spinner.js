@@ -18,6 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
     body.style.overflow = "initial";
     var elements = document.querySelectorAll("body > :not(#spinner)");
     for (var i = 0; i < elements.length; i++) {
-        elements[i].style.display = "block";
+        // elements[i].style.display = "block";
     }
 });
