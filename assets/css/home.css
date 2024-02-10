@@ -1,15 +1,57 @@
 /*
 ----------positive-impact-section--------
 */
-
-.positive-impact-section h1 {
-    margin-top: 1rem;
+.positive-impact{
+    padding: 0 50px;
+    margin-top: 150px;
 }
 
 .positive-impact-section a {
     margin-top: 2rem;
 }
 
+h1 {
+    font-size: 3.2rem ;
+    padding: 0;
+    margin: 0;
+}
+
+.positive-impact-seg1{
+    font-size: 1.8rem ;
+    font-weight: bold;
+    padding: 30px 130px 50px 0;
+}
+
+.positive-impact-seg2{
+    font-size: 1.4rem ;
+}
+
+.highlighted{
+    color: var(--app-color-primary);
+}
+/*
+----------know-contain-section--------
+*/
+.know-contain-image {
+    
+}
+
+.know-contain{
+    padding: 0 70px 0 120px ;
+    margin: 10px;
+}
+
+.know-contain-list{
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.know-contain-number{
+    color: var(--app-color-primary);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
 
 /*
 ----------products-section--------
@@ -247,4 +289,48 @@
 .council-card-container,
 .engagement-section-sub-container {
     padding: 4.5rem 0rem;
+}
+
+
+/* -------------------- *
+# CONTAINER
+* ---------------------  */
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+    width: 100%;
+    padding-right: var(10);
+    padding-left: var(10);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 576px) {
+    .container-sm, .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container-md, .container-sm, .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container-lg, .container-md, .container-sm, .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1320px;
+    }
 }

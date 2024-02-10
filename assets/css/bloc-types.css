@@ -4,6 +4,7 @@ Description: bloc with text at left and image at right;
 Example:homepage first bloc 
 */
 
+
 .bloc-type-twins {
     display: flex;
     align-items: center;
@@ -12,14 +13,14 @@ Example:homepage first bloc
 }
 
 .bloc-type-twins>.bloc-type-twins-first {
-    padding-right: 2rem;
+    /* padding-right: 2rem; */
 }
 
-.bloc-type-twins>.bloc-type-twins-second {
+/* .bloc-type-twins>.bloc-type-twins-second {
     max-width: 600px;
-}
+} */
 
-@media (min-width: 768px) and (max-width: 1279.95px) {
+/* @media (min-width: 768px) and (max-width: 1279.95px) {
     .bloc-type-twins>.bloc-type-twins-second>img {
         width: 470px;
     }
@@ -39,7 +40,7 @@ Example:homepage first bloc
     .bloc-type-twins>.bloc-type-twins-second>img {
         width: 100%;
     }
-}
+} */
 
 
 /* 
@@ -53,11 +54,13 @@ Example:homepage first bloc
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    max-height: 500px;
 }
 
 .bloc-type-twins-large>.bloc-type-twins-large-first {
     /* padding-right: 2rem; */
     flex: 1;
+    height: 450px;
 }
 
 .bloc-type-twins-large>.bloc-type-twins-large-second {
@@ -67,6 +70,7 @@ Example:homepage first bloc
 
 @media (min-width: 768px) and (max-width: 1279.95px) {
     .bloc-type-twins-large>.bloc-type-twins-large-second>img {
+        width: 100%;
         /* width: 470px; */
     }
 }
