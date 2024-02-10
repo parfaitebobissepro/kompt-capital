@@ -235,7 +235,7 @@ b {
 
 .section-default {
     background: transparent;
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
     position: relative;
 }
 

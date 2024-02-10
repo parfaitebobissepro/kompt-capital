@@ -54,13 +54,12 @@ Example:homepage first bloc
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    max-height: 500px;
+    /* max-height: 500px; */
 }
 
 .bloc-type-twins-large>.bloc-type-twins-large-first {
     /* padding-right: 2rem; */
     flex: 1;
-    height: 450px;
 }
 
 .bloc-type-twins-large>.bloc-type-twins-large-second {

@@ -1,13 +1,9 @@
 /*
 ----------positive-impact-section--------
 */
-.positive-impact{
-    padding: 0 50px;
-    margin-top: 150px;
-}
 
-.positive-impact-section a {
-    margin-top: 2rem;
+.positive-impact-section{
+    align-items: start;
 }
 
 h1 {
@@ -16,10 +12,13 @@ h1 {
     margin: 0;
 }
 
+.positive-impact{
+    margin-top: 125px;
+}
+
 .positive-impact-seg1{
     font-size: 1.8rem ;
     font-weight: bold;
-    padding: 30px 130px 50px 0;
 }
 
 .positive-impact-seg2{
@@ -52,6 +51,24 @@ h1 {
     font-size: 1.8rem;
     font-weight: bold;
 }
+
+.know-contain-section{
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 ----------products-section--------
