@@ -33,7 +33,6 @@ header[role="banner"].sticky::before {
 #header-container-logo {    
     z-index: 0;
     padding-top: 8px;
-    min-width: 252px;
 }
 
 #header-container-logo .logo {
@@ -184,11 +183,6 @@ header .navbar {
     color: var(--app-color-text-primary);
 }
 
-.responsive-menu-button {
-    margin-left: -0.75rem;
-    margin-right: 0.5rem;
-}
-
 .roundedButtonLigthGray {
     border-radius: 50%;
     flex: 0 0 auto;
@@ -208,6 +202,7 @@ header .navbar {
     height: 1.5em;
     position: relative;
 }
+
 
 .nav-sub-menu-responsive {
     max-height: 0;
@@ -244,24 +239,23 @@ header:not(.sticky) .navbar-nav .nav-item:nth-of-type(3) a:hover,header:not(.sti
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    display: none;
-    min-width: 252px;
 }
 
-.rigth-bloc-header .list-lang-type{
-    margin-right: 85px;
-}
+
 
 .rigth-bloc-header .search-button {
     margin-right: 23px;
 }
 
-.sticky .rigth-bloc-header svg path{
-    fill: var(--app-color-text-primary);
+/* .sticky .rigth-bloc-header svg path{} */
+ .rigth-bloc-header svg path{
+    /* fill: var(--app-color-text-primary); */
+    fill: var(--app-color-primary);
 }
 
-.sticky .rigth-bloc-header a:hover svg path{
-    fill: var(--app-color-primary);
+/* .sticky .rigth-bloc-header a:hover svg path{} */
+.rigth-bloc-header a:hover svg path{
+    fill: var(--app-color-text-primary);
 }
 
 @media (min-width: 375px) {
@@ -280,17 +274,33 @@ header:not(.sticky) .navbar-nav .nav-item:nth-of-type(3) a:hover,header:not(.sti
         height: 1.5em;
         position: relative;
     }
+    .rigth-bloc-header{
+        display: block;
+    }
+
+
+    .rigth-bloc-header .list-lang-type{
+        margin-right: 10px;
+    }
 }
 
 @media (min-width: 768px) {
     #header-container-logo .logo {
         width: 210px;
     }
-    .rigth-bloc-header{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+
+    #header-container-logo,.rigth-bloc-header{
+        min-width: unset;
     }
+
+    
+    .rigth-bloc-header, #header-container-logo{
+        min-width: 150px;
+    }
+
+    /* .rigth-bloc-header .list-lang-type{
+        margin-right: 10px;
+    } */
 }
 
 @media (min-width: 992px) {
@@ -311,12 +321,13 @@ header:not(.sticky) .navbar-nav .nav-item:nth-of-type(3) a:hover,header:not(.sti
     }
 }
 
-@media (max-width: 1170px) {
-    .rigth-bloc-header .list-lang-type{
-        margin-right: 20px;
+@media (min-width: 1170px) {
+    #header-container-logo,.rigth-bloc-header{
+        min-width: 150px;
     }
 
-    .rigth-bloc-header, #header-container-logo{
-        min-width: 186px;
+    /** Don't delete, play with this if you want traductions button to the left side end **/
+    .rigth-bloc-header .list-lang-type{
+        /* margin-right: 70px; */
     }
 }

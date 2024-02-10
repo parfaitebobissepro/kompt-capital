@@ -55,7 +55,7 @@
     flex-shrink: 0;
     border-width: 0px 0px thin;
     border-style: solid;
-    border-color: rgb(218, 217, 220);
+    border-color: rgb(235, 235, 235);
     width: 100%;
 }
 
@@ -152,6 +152,8 @@
     #header-container-logo-mobile {
         margin-left: 1rem;
         margin-right: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
     #header-container-logo-mobile .logo {
         width: 185px;

@@ -252,8 +252,3 @@ Example:homepage fifth bloc
 .list-lang-type-item.active a{
     font-weight: 700;
 }
-
-.padding-default{
-    padding-left: var(--app-global-padding-default);
-    padding-right: var(--app-global-padding-default);
-}

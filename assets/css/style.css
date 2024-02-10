@@ -103,6 +103,15 @@ h3 {
     padding-right: 1rem;
 }
 
+
+/** Padding **/
+
+.padding-default{
+    padding-left: var(--app-global-padding-default);
+    padding-right: var(--app-global-padding-default);
+}
+
+
 .nav-link {
     font-size: 1rem;
     font-weight: var(--app-font-weight);
@@ -204,6 +213,7 @@ b {
 }
 
 
+
 /** Spinner **/
 
 #spinner {
@@ -274,11 +284,23 @@ b {
     object-fit: cover;
 }
 
+@media (min-width: 0px) {
+    .padding-default{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
 @media (min-width: 768px) {
     .constraint-box {
         /* max-width: 704px; */
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .padding-default{
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     h1,
@@ -304,16 +326,12 @@ b {
 @media (min-width: 992px) {
     .constraint-box {
         /* max-width: 936px; */
-        padding-left: 0;
-        padding-right: 0;
     }
 }
 
 @media (min-width: 1280px) {
     .constraint-box {
         max-width: 1920px;
-        padding-left: 0;
-        padding-right: 0;
        
     }
 }
