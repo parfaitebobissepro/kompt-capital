@@ -6,7 +6,8 @@
     align-items: start;
 }
 
-h1 {
+h1,
+h2 {
     font-size: 3.2rem ;
     padding: 0;
     margin: 0;
@@ -19,35 +20,44 @@ h1 {
 .positive-impact-seg1{
     font-size: 1.8rem ;
     font-weight: bold;
+    margin: 25px 300px 50px 0;
 }
 
 .positive-impact-seg2{
     font-size: 1.4rem ;
+    margin-right: 50px;
+}
+
+strong{
+    font-weight: bold;
 }
 
 .highlighted{
     color: var(--app-color-primary);
 }
+
 /*
 ----------know-contain-section--------
 */
-.know-contain-image {
-    
-}
 
 .know-contain{
-    padding: 0 70px 0 120px ;
-    margin: 10px;
+    padding: 0 50px 0 240px;
+    margin-right: ;
+}
+
+.know-contain-title{
+    padding-top: 10px;
 }
 
 .know-contain-list{
     justify-content: center;
     text-align: center;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 .know-contain-number{
-    color: var(--app-color-primary);
+    color: var(--app-color-text-accent);
     font-size: 1.8rem;
     font-weight: bold;
 }
@@ -56,8 +66,52 @@ h1 {
     flex-direction: row-reverse;
 }
 
+.bloc-type-twins-large-third {
+    background-color: var(--app-background-default);
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: left;
+    padding: 50px;
+    left: 84vh;
+    top: 50;
+    height: 408px;
+    width: 300px;
+    border: 0 0 0 1px solid #ccc; /* Définir une bordure */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
 
+.bloc-type-twins-large-third i {
+    font-size: 0.8rem;
+    color: var(--app-color-text-accent);
+}
 
+/*
+----------target-sector-section--------
+*/
+
+h2{
+    margin-bottom: 20px;
+}
+
+.target-sector-detail{
+    margin-right: 50px;
+}
+
+/*
+----------geographical-area-section--------
+*/
+
+.geographical-area-section{
+    flex-direction: row-reverse;
+}
+
+.geographical-area{
+    margin: 50px;
+}
+
+.geographical-area-image{
+    justify-content: center;
+}
 
 
 
@@ -107,7 +161,7 @@ h1 {
     user-select: none;
     width: 1em;
     height: 1em;
-    display: inline-block;
+    /* display: inline-block; */
     fill: currentcolor;
     flex-shrink: 0;
     transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
