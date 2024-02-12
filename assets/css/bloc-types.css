@@ -67,16 +67,9 @@ Example:homepage first bloc
     flex: 1;
 }
 
-@media (min-width: 768px) and (max-width: 1279.95px) {
-    .bloc-type-twins-large>.bloc-type-twins-large-second>img {
-        /* width: 100%; */
-        /* width: 470px; */
-    }
-}
-
 @media(max-width: 991.95px) {
-    .bloc-type-twins {
-        flex-direction: column;
+    .bloc-type-twins-large {
+        flex-direction: column-reverse;
         align-items: start;
     }
 
@@ -85,8 +78,8 @@ Example:homepage first bloc
         align-self: center;
     }
 
-    .bloc-type-twins>.bloc-type-twins-second>img {
-        width: 100%;
+    .bloc-type-twins-large>.bloc-type-twins-large-second>img {
+        display: none;
     }
 }
 

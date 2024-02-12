@@ -57,7 +57,8 @@ a {
 
 p {
     margin-top: 1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    line-height: 1.7rem;
     padding: 0;
 }
 
@@ -85,17 +86,97 @@ body> :not(#spinner).loading {
 
 /** titles **/
 
-h1,
-h2,
+
+
 .strong-paragraph {
     font-weight: 700;
     font-size: 1.5rem;
 }
-
-h3 {
-    font-weight: 700;
-    font-size: 1.5rem;
+@media (min-width:0){
+    .title1 {
+        font-weight: bold;
+    }
 }
+
+@media (min-width:375px){
+    .title1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .title2 {
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+    }
+
+    .title3 {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+}
+
+@media (min-width:758px){
+    .title1 {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+    }
+
+    .title2 {
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+    }
+
+    .title3 {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+}
+
+@media (min-width:900px){
+    :root{
+        --app-font-size: 12px;
+    }
+
+}
+
+@media (min-width:1024px){
+    .title1 {
+        font-size: 2.7rem;
+        line-height: 3.5rem;
+    }
+
+    .title2 {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+
+    .title3 {
+        font-size: 1.36rem;
+        line-height: 2rem;
+    }
+
+}
+
+@media (min-width:1280px){
+    .title1 {
+        font-size: 3rem ;
+        line-height: 4.5rem;
+    }
+    
+    .title2 {
+        font-size: 1.6rem ;
+        line-height: 1.86rem;
+    }
+    
+    .title3 {
+        font-size: 1.36rem;
+        line-height: 2rem;
+    }
+
+}
+
 
 .constraint-box {
     margin-left: auto;
@@ -357,13 +438,7 @@ b {
         padding-right: 1rem;
     }
 
-    h1,
-    h2,
-    .strong-paragraph {
-        font-size: 2rem;
-        letter-spacing: 0px;
-        line-height: 48px;
-    }
+    
 
     h3 {
         line-height: 36px;

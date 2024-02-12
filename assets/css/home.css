@@ -6,27 +6,46 @@
     align-items: start;
 }
 
-h1,
-h2 {
-    font-size: 3.2rem ;
-    padding: 0;
-    margin: 0;
-}
 
 .positive-impact{
     margin-top: 125px;
 }
 
-.positive-impact-seg1{
-    font-size: 1.8rem ;
+
+.positive-impact-seg1 .sous-titre{
+    font-size: 1.6rem ;
     font-weight: bold;
-    margin: 25px 300px 50px 0;
+    margin: 20px 0 40px 0;
+    max-width: 468px;
 }
 
 .positive-impact-seg2{
-    font-size: 1.4rem ;
     margin-right: 50px;
 }
+
+img.localPoint {
+    width: 34px;
+    height: 48px;
+    top:110px;
+    left: 380px;
+}
+
+.local-contact {
+    background-color: var(--app-background-default);
+    font-size: 1.2rem;
+    line-height: 1.43rem;
+    padding: 10px;
+    left: 425px;
+    top: 60px;
+    height: 137px;
+    width: 295px;
+    border: 0 0 0 1px solid #ccc;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+ .local-contact-item p {
+    margin: 0 0 5px 0;
+ }
+
 
 strong{
     font-weight: bold;
@@ -40,14 +59,15 @@ strong{
 ----------know-contain-section--------
 */
 
-.know-contain{
-    padding: 0 50px 0 240px;
-    margin-right: ;
+.know-contain-section {
+    align-items: start;
 }
 
-.know-contain-title{
-    padding-top: 10px;
+.know-contain{
+    max-width: 960px;
+    /* padding: 0 50px 0 240px; */
 }
+
 
 .know-contain-list{
     justify-content: center;
@@ -58,7 +78,7 @@ strong{
 
 .know-contain-number{
     color: var(--app-color-text-accent);
-    font-size: 1.8rem;
+    font-size: 2.36rem;
     font-weight: bold;
 }
 
@@ -68,7 +88,8 @@ strong{
 
 .bloc-type-twins-large-third {
     background-color: var(--app-background-default);
-    font-size: 1.5rem;
+    font-size: 1.36rem;
+    line-height: 2rem;
     justify-content: center;
     text-align: left;
     padding: 50px;
@@ -80,9 +101,10 @@ strong{
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.bloc-type-twins-large-third i {
-    font-size: 0.8rem;
+.mark-image {
     color: var(--app-color-text-accent);
+    width: 46.01px;
+    height: 35px;
 }
 
 /*
@@ -114,11 +136,22 @@ h2{
 }
 
 
+@media (max-width:1240px){
+    .positive-impact-seg1 .sous-titre {
+        font-size: inherit;
+    }
+}
 
+@media (max-width:991.98px){
+    /* .positive-impact {
+        margin-top: 50px;
+    } */
 
-
-
-
+    .positive-impact-seg1 .sous-titre {
+        max-width: 400px;
+        margin: 20px 0;
+    }
+}
 
 
 
