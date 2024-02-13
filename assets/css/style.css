@@ -134,7 +134,7 @@ body> :not(#spinner).loading {
 
 }
 
-@media (min-width:900px){
+@media (max-width:900px){
     :root{
         --app-font-size: 12px;
     }

@@ -11,40 +11,83 @@
     margin-top: 125px;
 }
 
+.positive-impact .positive1{
+    line-height: inherit;
+    margin: 0;
+}
+
 
 .positive-impact-seg1 .sous-titre{
-    font-size: 1.6rem ;
+    font-size: 1.36rem ;
+    line-height: 1.86rem;
     font-weight: bold;
-    margin: 20px 0 40px 0;
+    margin: 20px 0 50px 0;
     max-width: 468px;
 }
 
 .positive-impact-seg2{
     margin-right: 50px;
+    margin-bottom: 27px;
 }
 
 img.localPoint {
-    width: 34px;
-    height: 48px;
-    top:110px;
-    left: 380px;
+    width: 6.36%;
+    height: 11.33%;
+    top:calc(50% - (11.33% / 2));
+    left: calc(50% - (6.36% / 2));
+}
+
+.local-contact-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.local-contact-global {
+    align-items: center;
+    max-width: 39.07%;
+    margin-left: calc(39.07% + 20px);
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid var(--app-background-default);
+    transform: translateY(calc(50% - 10px)) rotate(-90deg);
 }
 
 .local-contact {
     background-color: var(--app-background-default);
-    font-size: 1.2rem;
-    line-height: 1.43rem;
     padding: 10px;
-    left: 425px;
-    top: 60px;
-    height: 137px;
-    width: 295px;
     border: 0 0 0 1px solid #ccc;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
  .local-contact-item p {
-    margin: 0 0 5px 0;
+    margin: 0;
  }
+
+ .local-contact-item .local-email {
+    line-height: 1.14rem;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+ }
+
+.positive-impact-seg3 .positive-impact-image-background {
+    max-width: 100%;
+ }
+
+ img.local-contact-image {
+    align-self: start;
+    position: relative;
+    top: 6px;
+ }
+ 
 
 
 strong{
@@ -143,17 +186,29 @@ h2{
 }
 
 @media (max-width:991.98px){
-    /* .positive-impact {
-        margin-top: 50px;
-    } */
-
     .positive-impact-seg1 .sous-titre {
         max-width: 400px;
         margin: 20px 0;
     }
 }
 
-
+@media (max-width:475px) {
+    .local-contact {
+        padding: 8px 8px 5px 8px;
+    }
+    .local-contact-item p{
+        font-size: 0.5rem;
+        margin-bottom: 0;
+    
+    }
+    .local-contact-item .local-email {
+        margin: 0;
+        line-height: 0.9rem;
+    }
+    img.local-contact-image {
+        top: 4px;
+    }
+}
 
 
 
