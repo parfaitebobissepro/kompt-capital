@@ -245,8 +245,22 @@ cite {
 }
 
 @media (max-width:991.95px){
-    .positive-impact-section>.bloc-type-twins-large-second>img {
+    /* .positive-impact-section>.bloc-type-twins-large-second>img {
         display: none;
+    } */
+    .positive-impact-section{
+        flex-direction: column-reverse;
+    }
+    .positive-impact{
+        margin-top: 50px;
+    }
+     .positive-impact-section>.bloc-type-twins-large-second>img {
+        height: 40vh;
+        width: 100%;
+        min-height: unset;
+    }
+    .positive-impact-section>.bloc-type-twins-large-second{
+        width: 100%;
     }
     .positive-impact-seg1 .sous-titre {
         max-width: 400px;
@@ -261,6 +275,12 @@ cite {
     .know-contain {
         margin-right: 0;
     }
+
+    .know-contain-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .geographical-area-section {
         align-items: stretch;
         flex-direction: column;
