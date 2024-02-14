@@ -176,13 +176,19 @@ cite {
 /*
 ----------target-sector-section--------
 */
-
-h2{
-    margin-bottom: 20px;
+.target-sector-section {
+    top: -50px;
 }
+
 
 .target-sector-detail{
     margin-right: 50px;
+}
+
+.target-serctor-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*
@@ -190,6 +196,8 @@ h2{
 */
 
 .geographical-area-section{
+    top: -50px;
+    align-items: center;
     flex-direction: row-reverse;
 }
 
@@ -198,7 +206,8 @@ h2{
 }
 
 .geographical-area-image{
-    justify-content: center;
+    align-content: center;
+    
 }
 
 
@@ -229,6 +238,9 @@ h2{
     .positive-impact-section>.bloc-type-twins-large-second>img {
         display: none;
     }
+    .geographical-area-section>.bloc-type-twins-large-second {
+        display: none;
+    }
     .positive-impact-seg1 .sous-titre {
         max-width: 400px;
         margin: 20px 0;
@@ -236,7 +248,7 @@ h2{
     .know-contain-section {
         flex-direction: column;
     }
-    .know-contain {
+    .spacing-responsive {
         padding-top: 30px;
         padding-bottom: 30px;
     }
@@ -268,6 +280,16 @@ h2{
 
 }
 
+@media (max-width:375px) {
+    .citation {
+        width: 90%;
+        padding: 5px;
+        font-size: 1rem;
+    }
+    .citation blockquote {
+        font: 1rem sans-serif;
+    }
+}
 
 
 /*
