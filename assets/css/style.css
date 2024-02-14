@@ -42,6 +42,7 @@ main{
     --app-border-button-raduis-default: 4px;
     /* --app-global-padding-default */
     --app-global-padding-default: 50px;
+    --app-padding: 51px;
 }
 
 * {
@@ -413,7 +414,7 @@ b {
 /** Images **/
 
 .largers-images{
-    /* max-height: 901px; */
+    height: 900px;
     max-width: 100%;
     min-height: 100vh;
     object-fit: cover;
@@ -426,14 +427,14 @@ b {
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 992px) {
     .constraint-box {
         /* max-width: 704px; */
         padding-left: 0;
         padding-right: 0;
     }
 
-    .padding-default{
+    html .padding-default{
         padding-left: 1rem;
         padding-right: 1rem;
     }

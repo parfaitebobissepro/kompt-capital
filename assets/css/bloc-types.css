@@ -54,23 +54,20 @@ Example:homepage first bloc
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    /* max-height: 500px; */
 }
 
 .bloc-type-twins-large>.bloc-type-twins-large-first {
-    /* padding-right: 2rem; */
     flex: 1;
 }
 
 .bloc-type-twins-large>.bloc-type-twins-large-second {
-    /* max-width: 600px; */
     flex: 1;
 }
 
 @media(max-width: 991.95px) {
     .bloc-type-twins-large {
-        flex-direction: column-reverse;
-        align-items: start;
+        flex-direction: column;
+        align-items: stretch;
     }
 
     .bloc-type-twins>.bloc-type-twins-second {
@@ -78,9 +75,9 @@ Example:homepage first bloc
         align-self: center;
     }
 
-    .bloc-type-twins-large>.bloc-type-twins-large-second>img {
+    /* .bloc-type-twins-large>.bloc-type-twins-large-second>img {
         display: none;
-    }
+    } */
 }
 
 

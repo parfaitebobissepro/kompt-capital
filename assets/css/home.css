@@ -103,12 +103,16 @@ strong{
 */
 
 .know-contain-section {
-    align-items: start;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    top: -50px;
 }
 
 .know-contain{
-    max-width: 960px;
-    /* padding: 0 50px 0 240px; */
+    padding-left: var(--app-global-padding-default);
+    margin-left: 16.67%;
+    margin-right: 6%;
+    margin-top: 4.2rem;
 }
 
 
@@ -125,29 +129,48 @@ strong{
     font-weight: bold;
 }
 
-.know-contain-section{
-    flex-direction: row-reverse;
+.know-contain-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.bloc-type-twins-large-third {
+.citation-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: end;
+}
+
+.citation {
     background-color: var(--app-background-default);
     font-size: 1.36rem;
     line-height: 2rem;
     justify-content: center;
     text-align: left;
-    padding: 50px;
-    left: 84vh;
-    top: 50;
-    height: 408px;
-    width: 300px;
+    position: relative;
+    right: -16.67%;
+    width: 33.33%;
+    padding: 30px;
     border: 0 0 0 1px solid #ccc; /* Définir une bordure */
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
+cite {
+    font-style: normal;
+}
+
+.citation span {
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
 .mark-image {
     color: var(--app-color-text-accent);
-    width: 46.01px;
-    height: 35px;
+    width: 15.34%;
 }
 
 /*
@@ -183,12 +206,39 @@ h2{
     .positive-impact-seg1 .sous-titre {
         font-size: inherit;
     }
+    .know-contain{
+        margin-left: 0;
+    }
+    .citation-container {
+        justify-content: center;
+    }
+    .citation {
+        right: inherit;
+        width: 44.44%;
+    }
 }
 
-@media (max-width:991.98px){
+@media (min-width: 991.95px) and (max-width: 1104px){
+    .know-contain{
+        padding-left: 15px;
+        margin-right: 1%;
+    }
+}
+
+@media (max-width:991.95px){
+    .positive-impact-section>.bloc-type-twins-large-second>img {
+        display: none;
+    }
     .positive-impact-seg1 .sous-titre {
         max-width: 400px;
         margin: 20px 0;
+    }
+    .know-contain-section {
+        flex-direction: column;
+    }
+    .know-contain {
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 
@@ -208,6 +258,14 @@ h2{
     img.local-contact-image {
         top: 4px;
     }
+    .know-contain-list {
+        flex-wrap: wrap;
+    }
+    .citation {
+        width: 75%;
+        padding: 15px;
+    }
+
 }
 
 
