@@ -427,3 +427,12 @@ footer {
     flex-wrap: wrap;
     gap: 10px;
 }
+
+@media (max-width:768px) {
+    .footer-foot,
+    .footer-head {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+}

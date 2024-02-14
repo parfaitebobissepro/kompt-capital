@@ -112,7 +112,8 @@ strong{
     padding-left: var(--app-global-padding-default);
     margin-left: 16.67%;
     margin-right: 6%;
-    margin-top: 4.2rem;
+    margin-top: 6.36rem;
+    padding-bottom: 20px;
 }
 
 
@@ -180,11 +181,6 @@ cite {
     top: -50px;
 }
 
-
-.target-sector-detail{
-    margin-right: 50px;
-}
-
 .target-serctor-image {
     width: 100%;
     height: 100%;
@@ -196,18 +192,13 @@ cite {
 */
 
 .geographical-area-section{
-    top: -50px;
     align-items: center;
     flex-direction: row-reverse;
+    top: -50px;
 }
 
-.geographical-area{
-    margin: 50px;
-}
-
-.geographical-area-image{
-    align-content: center;
-    
+.geographical-area-imag {
+    justify-content: center;
 }
 
 
@@ -217,6 +208,9 @@ cite {
     }
     .know-contain{
         margin-left: 0;
+    }
+    .know-contain-list {
+        flex-wrap: wrap;
     }
     .citation-container {
         justify-content: center;
@@ -229,7 +223,7 @@ cite {
 
 @media (min-width: 991.95px) and (max-width: 1104px){
     .know-contain{
-        padding-left: 15px;
+        /* padding-left: 15px; */
         margin-right: 1%;
     }
 }
@@ -238,19 +232,29 @@ cite {
     .positive-impact-section>.bloc-type-twins-large-second>img {
         display: none;
     }
-    .geographical-area-section>.bloc-type-twins-large-second {
-        display: none;
-    }
     .positive-impact-seg1 .sous-titre {
         max-width: 400px;
         margin: 20px 0;
     }
+    .positive-impact-seg2{
+        margin-right: 0;
+    }
     .know-contain-section {
+        flex-direction: column;
+    }
+    .know-contain {
+        margin-right: 0;
+    }
+    .geographical-area-section {
+        align-items: stretch;
         flex-direction: column;
     }
     .spacing-responsive {
         padding-top: 30px;
         padding-bottom: 30px;
+    }
+    p {
+        text-align: justify;
     }
 }
 
@@ -270,9 +274,7 @@ cite {
     img.local-contact-image {
         top: 4px;
     }
-    .know-contain-list {
-        flex-wrap: wrap;
-    }
+    
     .citation {
         width: 75%;
         padding: 15px;
