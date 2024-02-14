@@ -145,7 +145,7 @@
     float: right;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 0px) {
      :root {
         --side-bar-width: 300px;
     }

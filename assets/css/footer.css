@@ -299,7 +299,7 @@ footer {
     background-color: var(--app-color-primary-opacited-ligth);
 }
 
-@media (min-width: 375px) {
+@media (min-width: 0px) {
     .footer-container {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -392,6 +392,12 @@ footer {
     margin-bottom: 0;
     gap: 35px;
     margin-left: 79px;
+}
+
+@media (max-width: 375px) {
+    .footer-head ul{
+        margin-left: 5px;
+    }
 }
 
 

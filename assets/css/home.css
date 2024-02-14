@@ -34,7 +34,7 @@ img.localPoint {
     width: 6.36%;
     height: 11.33%;
     top:calc(50% - (11.33% / 2) - 10px);
-    left: calc(50% - (6.36% / 2) + 20px);
+    left: calc(50% - (6.36% / 2) + 1.5%);
 }
 
 .local-contact-container {
@@ -50,7 +50,7 @@ img.localPoint {
 .local-contact-global {
     align-items: center;
     max-width: 39.07%;
-    margin-left: calc(39.07% + 70px);
+    margin-left: calc(39.07% + 6%);
     top: -10px;
     position: relative;
 }
@@ -180,6 +180,12 @@ cite {
     width: 15.34%;
 }
 
+@media (max-width:375px) {
+    .citation span {
+        margin-top: 5px;
+    }
+}
+
 /*
 ----------target-sector-section--------
 */
@@ -299,7 +305,6 @@ cite {
 @media (max-width:375px) {
     .citation {
         width: 90%;
-        padding: 5px;
         font-size: 1rem;
     }
     .citation blockquote {
@@ -435,7 +440,7 @@ cite {
     color: rgb(20, 0, 120);
 }
 
-@media (min-width: 375px) {
+@media (min-width: 0px) {
     .products-section .slider .product-card-container {
         width: 100%;
         padding-left: 0.5rem;
