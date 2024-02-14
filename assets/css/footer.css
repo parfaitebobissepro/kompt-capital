@@ -312,6 +312,7 @@ footer {
         border-bottom: 1px solid #dad9dc;
     }
     .footer-container>div:nth-child(4) {
+        border-bottom: 1px solid transparent;
         /* margin-top: 1rem; */
     }
     .footer-list {
@@ -357,6 +358,7 @@ footer {
         box-sizing: border-box;
         border-bottom: none;
     }
+    
 
     :root{
         --app-regular-padding-container : 1rem;
@@ -435,4 +437,12 @@ footer {
         padding-right: 1rem;
     }
 
+    .contact-title{
+        font-size: 2rem;
+        line-height: 2.42rem;
+    }
+
+    .footer-container .footer-title{
+        font-size: 1.5rem;
+    }
 }
