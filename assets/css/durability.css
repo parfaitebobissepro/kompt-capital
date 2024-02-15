@@ -8,7 +8,6 @@
     font-size: 1.36rem ;
     line-height: 1.86rem;
     font-weight: bold;
-    max-width: 93.6%;
 }
 
 .resp-img {
@@ -25,12 +24,11 @@
 
 .durability-contain{
     margin-top: 125px;
-    margin-left: 130px;
 }
 
 .durability-image{
     width: 90%;
-    margin-top: 130px;
+    margin-top: 125px;
 }
 
 /*
@@ -48,8 +46,7 @@
 }
 
 .exposition-risq-image {
-    width: 90%;
-    margin-left: 130px;
+    width: 70%;
 }
 
 /*
@@ -60,12 +57,9 @@
     align-items: center;
 }
 
-.resist-stress {
-    margin-left: 130px;
-}
 
 .resist-stress-image {
-    width: 90%;
+    width: 70%;
 }
 
 /*
@@ -80,17 +74,9 @@
     text-align: center;
     margin-top: 50px;
 }
-.ext {
-    margin-left: 130px;
-}
-
-.ext1 {
-    padding-left: var(--app-global-padding-default);
-    margin-right: 50px;
-}
 
 .together-contain-image {
-    width: 90%;
+    width: 70%;
 }
 
 together-contain
@@ -110,24 +96,24 @@ together-contain
     text-align: center;
 }
 
+.engagment-contain-seg2 {
+    margin: 0;
+}
+
 .engagment-contain-detail {
-    text-align: center;
+    justify-content: center;
+    max-width: 1379px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.engagment-contain-image {
+    width: 70%;
 }
 
 @media (max-width:1240px){
-    .stLogo,
-    .durability-contain,
-    .exposition-risq-image,
-    .resist-stress,
-    .ext {
-        margin-left: var(--app-global-padding-default);
-    }
-    .exposition-risq-seg1 .sous-titre {
+    .sous-titre {
         font-size: inherit;
-    }
-    .exposition-risq,
-    .ext1 {
-        margin-left: 0;
     }
     .resist-stress {
         margin-right: 0;
@@ -139,13 +125,7 @@ together-contain
 }
 
 @media (max-width:991.95px){
-    .stLogo,
-    .durability-contain,
-    .exposition-risq-image,
-    .resist-stress,
-    .ext {
-        margin-left: 0;
-    }
+    
     .durability-contain-section {
         margin-top: 55px;
         align-items: stretch;
@@ -155,8 +135,10 @@ together-contain
         margin-top: 0;
         margin-right: 0;
     }
-    .exposition-risq,
-    .ext1{
+    .durability-image{
+        margin-top: 0;
+    }
+    .exposition-risq{
         padding: 0;
         margin: 0;
     }
@@ -172,15 +154,22 @@ together-contain
     .together-bloc {
         text-align: inherit;
         display: flex;
+    }
+    .ext {
         flex-direction:row;
-        margin-top: 0;
+    }
+    .ext1 {
+        flex-direction:row-reverse;
     }
     .together-contain1,
     .together-contain2 {
         width: 85%;
     }
     .engagment-contain {
-        text-align: center;
+        text-align: inherit;
+    }
+    .engagment-contain-seg2 {
+        width: 100%;
     }
     .after-section {
         border-bottom: 0;
