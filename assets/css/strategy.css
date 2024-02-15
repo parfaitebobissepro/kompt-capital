@@ -1,0 +1,208 @@
+.stLogo {
+    margin-left: 130px;
+}
+
+/*
+----------strategy-contain-section--------
+*/
+
+.strategy-contain-section{
+    align-items: stretch;
+}
+
+.strategy-contain{
+    margin-top: 125px;
+    margin-left: 130px;
+    margin-right: 37px;
+    text-align: justify;
+}
+
+.strategy-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/*
+----------approch-contain-section--------
+*/
+
+.approch-contain-section {
+    align-items: stretch;
+    flex-direction: row-reverse;
+}
+
+.approch-contain{
+    padding-left: var(--app-global-padding-default);
+    text-align: justify;
+    margin-top: 9%;
+}
+
+.approch-contain-seg1 .sous-titre{
+    font-size: 1.36rem ;
+    line-height: 1.86rem;
+    font-weight: bold;
+    max-width: 93.6%;
+}
+
+.approch-contain-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.approch-border {
+    border-bottom: 0.1px solid #f4f4f4;
+    padding-bottom: 10px;
+}
+
+
+/*
+----------heart-approch-section--------
+*/
+
+.heart-approch-section {
+    padding-top: 87px;
+}
+.heart-appro {
+    font-size: 1rem;
+    line-height: 1.71rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.heart-approch-list{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.heart-approch-item {
+    background: #ffffff;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05), 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+    padding: 12px;
+}
+
+.heart-approch-item-title{
+    color: var(--app-color-text-accent);
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 127.5%;
+}
+
+.heart-approch-item-details p{
+    max-width: 100%;
+    line-height: 126.3%;
+    margin: 10px;
+}
+
+.heart-image {
+    position: relative;
+    top: calc(50% - 29.5px);
+}
+/*
+----------process-invest-section--------
+*/
+
+.process-invest-section {
+    align-items: center;
+    flex-direction: column;
+}
+
+.process-invest-detail {
+    text-align: center;
+    margin-bottom: 71px;
+}
+
+.process-invest-image {
+    position: relative;
+    justify-content: center;
+    width: 95%;
+}
+
+.invest-border {
+    border-bottom:   #f4f4f4;
+}
+
+
+
+@media (max-width:1240px){
+    .stLogo {
+        margin-left: var(--app-global-padding-default);
+    }
+    .strategy-contain {
+        margin-left: var(--app-global-padding-default);
+        padding: 0 0 20px 0;
+
+    }
+    .approch-contain-seg1 .sous-titre {
+        font-size: inherit;
+    }
+    .approch-contain{
+        margin-left: 0;
+    }
+    .heart-approch-list {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 991.95px) and (max-width: 1104px){
+    .strategy-contain-details p{
+        max-width: 95.5%;
+    }
+    
+}
+
+@media (max-width:991.95px){
+    .stLogo {
+        margin-left: 0;
+    }
+    .strategy-contain-section {
+        margin-top: 55px;
+        align-items: stretch;
+        flex-direction: column-reverse;
+    }
+    .strategy-contain {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .approch-contain{
+        padding: 0;
+    }
+    .approch-contain-seg1 .sous-titre {
+        max-width: inherit;
+    }
+    .approch-contain-seg2{
+        margin-right: 0;
+    }
+    .approch-contain-section {
+        flex-direction: column-reverse;
+    }
+    .approch-contain {
+        margin: 0;
+    }
+    .heart-approch-section {
+        padding-top: inherit;
+    }
+    .approch-border {
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+    .spacing-responsive {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width:475px) {
+
+}
+
+@media (max-width:375px) {
+   
+}
