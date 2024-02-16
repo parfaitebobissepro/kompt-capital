@@ -1,0 +1,145 @@
+.resp-img {
+    justify-content: center;
+    margin-bottom: 34px;
+}
+
+.after-section {
+    border-bottom: 0.1px solid #BbBbBb;
+    padding: 50px 0;
+}
+
+.sous-titre {
+    font-size: 1.36rem;
+    line-height: 1.86rem;
+    font-weight: bold;
+    max-width: 93.6%;
+}
+
+.spacing-responsive {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*
+----------our-team-section--------
+*/
+
+.our-team-section {
+    align-items: stretch;
+}
+
+.our-team {
+    margin-top: 125px;
+    margin-right: 20px;
+}
+
+.our-team-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/*
+----------senior-advisor-section--------
+*/
+
+.partner-contain {
+    padding: 50px 0;
+}
+
+.senior-advisor-title,
+.partner-contain-title,
+.rejoignez-nous-title {
+    padding-bottom: 30px;
+}
+
+.rejoignez-nous-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/*
+----------photos-profil div--------
+*/
+
+.photos-profil-list {
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.photo {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+}
+
+@media (max-width:1240px) {
+    .our-team {
+        margin-right: 15px;
+    }
+
+    .our-team-seg1 .sous-titre {
+        font-size: inherit;
+    }
+}
+
+@media (max-width:991.95px) {
+    .our-team-section {
+        margin-top: 55px;
+        align-items: stretch;
+        flex-direction: column-reverse;
+    }
+
+    .our-team {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .our-team-image {
+        margin-top: 20px;
+    }
+
+    .after-section {
+        border-bottom: 0;
+        padding: 0;
+    }
+
+    .spacing-responsive {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+
+@media (max-width:750px) {
+    .spacing-responsive {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .senior-advisor-title,
+    .partner-contain-title,
+    .rejoignez-nous-title {
+        padding-bottom: 15px;
+    }
+    .photos-profil-list {
+        gap: 20px;
+    }
+}
+
+@media (max-width:475px) {
+    .resp-img {
+        margin-bottom: 14px;
+    }
+    .photo {
+        width: 14, 46%;
+        height: 14, 46%;
+    }
+    .sous-titre {
+        font-size: inherit;
+    }
+}
