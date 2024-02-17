@@ -400,8 +400,8 @@ footer {
 
 
 .contact-title{
-    font-size: 1.9rem;
-    line-height: 1.9rem;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
 }
 
 .footer-head ul{
@@ -473,5 +473,9 @@ footer {
 @media (max-width:1268px) {
     :root{
         --app-regular-padding-container : 1rem;
+    }
+    .footer-head{
+        padding-left: 0;
+        padding-right: 0;
     }
 }

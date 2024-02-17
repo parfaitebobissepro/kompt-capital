@@ -148,7 +148,7 @@ strong {
     padding-left: var(--app-global-padding-default);
     margin-left: 16.67%;
     margin-right: 6%;
-    margin-top: 6.36rem;
+    margin-top: 2.5rem;
     padding-bottom: 20px;
 }
 
@@ -208,6 +208,10 @@ cite {
 .citation span {
     font-size: 1.1rem;
     display: inline-block;
+}
+
+.citation blockquote strong{
+    font-size: 1.2rem;
 }
 
 .mark-image {
