@@ -30,7 +30,10 @@
     line-height: 1.86rem;
     font-weight: 500;
     margin: 30px 0 30px 0;
-    max-width: 650px;
+}
+
+.positive-impact-seg1 .sous-titre strong{
+    font-weight: bold;
 }
 
 .positive-impact-seg2 {
@@ -95,6 +98,7 @@ img.localPoint {
     margin-bottom: 10px;
     color: rgb(0, 0, 0);
     font-size: 0.8rem;
+    margin-top: 0;
 }
 
 .positive-impact-seg3 .positive-impact-image-background {
@@ -280,6 +284,14 @@ cite {
     }
 }
 
+
+@media (max-width:670px) {
+    .positive-impact-title .title1{
+        max-width: 250px;
+    }
+}
+
+
 @media (max-width:991.95px) {
     /* .positive-impact-section>.bloc-type-twins-large-second>img {
         display: none;
@@ -290,6 +302,8 @@ cite {
         top: 8rem;
         z-index: 2;
     }
+
+
 
     .positive-impact {
         margin-top: 3rem;
@@ -325,7 +339,6 @@ cite {
     }
 
     .positive-impact-seg1 .sous-titre {
-        max-width: 400px;
         margin: 20px 0;
     }
 
@@ -359,6 +372,21 @@ cite {
         max-width: 60vw;
     }
 }
+
+
+@media (min-width: 0) {
+    .positive-impact-seg1 .sous-titre {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 991px) {
+    .positive-impact-seg1 .sous-titre {
+        max-width: 480px;
+    }
+}
+
+
 
 @media (max-width:475px) {
     .local-contact {
