@@ -41,7 +41,7 @@
 .approch-contain-seg1 .sous-titre{
     font-size: 1.36rem ;
     line-height: 1.86rem;
-    font-weight: bold;
+    font-weight: 500;
     max-width: 93.6%;
 }
 
@@ -84,12 +84,16 @@
     background: #ffffff;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05), 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
     padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .heart-approch-item-title{
     color: var(--app-color-text-accent);
     font-size: 1.3rem;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 127.5%;
 }
 
@@ -128,7 +132,8 @@
 }
 
 .invest-border {
-    border-bottom:   #f4f4f4;
+    border-bottom:   #B4B4B4;
+    border-top: 1px solid #B4B4B4; 
 }
 
 
@@ -144,16 +149,18 @@
         margin-left: 0;
     }
     .heart-approch-list {
+        display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .heart-approch-item {
         background: #ffffff;
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05), 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 8px 15px 3px rgba(0, 0, 0, 0.05), 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
         padding: 12px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+  
     }
     .process-invest-detail {
         margin-bottom: 50px;

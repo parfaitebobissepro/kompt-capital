@@ -194,37 +194,34 @@
                             <div class="photos-profil-item flex-1">
                                 <div class="photos-profil-item-image relative">
                                     <div class="resp-img flex">
-                                        <img class="photo" src="./assets/images/teams/102.png" alt="">
+                                        <img class="photo" src="./assets/images/teams/user.png" alt="">
                                     </div>
                                 </div>
                                 <div class="photos-profil-item-name sous-titre">
                                     <span class="highlighted">Ghislain KAPSSU</span>
-                                    <br>
-                                    Managing Partner
+                                    <span>Managing Partner</span>
                                 </div>
                             </div>
                             <div class="photos-profil-item flex-1">
                                 <div class="photos-profil-item-image relative">
                                     <div class="resp-img flex">
-                                        <img class="photo" src="./assets/images/teams/131.png" alt="">
+                                        <img class="photo" src="./assets/images/teams/user.png" alt="">
                                     </div>
                                 </div>
                                 <div class="photos-profil-item-name sous-titre">
                                     <span class="highlighted">Ghislain KAPSSU</span>
-                                    <br>
-                                    Managing Partner
+                                    <span>Managing Partner</span>
                                 </div>
                             </div>
                             <div class="photos-profil-item flex-1">
                                 <div class="photos-profil-item-image relative">
                                     <div class="resp-img flex">
-                                        <img class="photo" src="./assets/images/teams/138.png" alt="">
+                                        <img class="photo" src="./assets/images/teams/user.png" alt="">
                                     </div>
                                 </div>
                                 <div class="photos-profil-item-name sous-titre">
                                     <span class="highlighted">Ghislain KAPSSU</span>
-                                    <br>
-                                    Managing Partner
+                                    <span>Managing Partner</span>
                                 </div>
                             </div>
                         </div>
@@ -241,37 +238,34 @@
                             <div class="photos-profil-item flex-1">
                                 <div class="photos-profil-item-image relative">
                                     <div class="resp-img flex">
-                                        <img class="photo" src="./assets/images/teams/75.jpeg" alt="">
+                                        <img class="photo" src="./assets/images/teams/user.png" alt="">
                                     </div>
                                 </div>
                                 <div class="photos-profil-item-name sous-titre">
                                     <span class="highlighted">Ghislain KAPSSU</span>
-                                    <br>
-                                    Managing Partner
+                                    <span>Managing Partner</span>
                                 </div>
                             </div>
                             <div class="photos-profil-item flex-1">
                                 <div class="photos-profil-item-image relative">
                                     <div class="resp-img flex">
-                                        <img class="photo" src="./assets/images/teams/134.png" alt="">
+                                        <img class="photo" src="./assets/images/teams/user.png" alt="">
                                     </div>
                                 </div>
                                 <div class="photos-profil-item-name sous-titre">
                                     <span class="highlighted">Ghislain KAPSSU</span>
-                                    <br>
-                                    Managing Partner
+                                    <span>Managing Partner</span>
                                 </div>
                             </div>
                             <div class="photos-profil-item flex-1">
                                 <div class="photos-profil-item-image relative">
                                     <div class="resp-img flex">
-                                        <img class="photo" src="./assets/images/teams/128.png" alt="">
+                                        <img class="photo" src="./assets/images/teams/user.png" alt="">
                                     </div>
                                 </div>
                                 <div class="photos-profil-item-name sous-titre">
                                     <span class="highlighted">Ghislain KAPSSU</span>
-                                    <br>
-                                    Managing Partner
+                                    <span>Managing Partner</span>
                                 </div>
                             </div>
                         </div>
@@ -722,4 +716,31 @@
     <script src="./assets/js/footer.js"></script>
     <script src="./assets/js/ripple.js"></script>
     <script src="./assets/js/home.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementsByClassName("photos-profil-item");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
 </html>

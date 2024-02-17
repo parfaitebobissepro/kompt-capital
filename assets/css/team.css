@@ -4,20 +4,31 @@
 }
 
 .after-section {
-    border-bottom: 0.1px solid #BbBbBb;
+    border-bottom: 0.1px solid #B4B4B4;
     padding: 50px 0;
 }
 
 .sous-titre {
     font-size: 1.36rem;
     line-height: 1.86rem;
-    font-weight: bold;
-    max-width: 93.6%;
+    font-weight: 500;
+}
+
+.sous-titre span{
+    display: block;
+    text-align: center;
 }
 
 .spacing-responsive {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.photos-profil-list{
+    max-width: 1820px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }
 
 /*
@@ -45,7 +56,7 @@
 */
 
 .partner-contain {
-    padding: 50px 0;
+    /* padding: 50px 0; */
 }
 
 .senior-advisor-title,
@@ -143,3 +154,48 @@
         font-size: inherit;
     }
 }
+
+
+
+
+/** Modal **/
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
