@@ -87,21 +87,29 @@ body> :not(#spinner).loading {
 
 /** titles **/
 
+h1{
+    margin: 0;
+}
+
 
 
 .strong-paragraph {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.5rem;
 }
 @media (min-width:0){
     .title1 {
-        font-weight: bold;
+        font-weight: 500;
+    }
+
+    .title1 .small_text{
+        font-size: 1rem;
     }
 }
 
 @media (min-width:375px){
     .title1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 2.5rem;
     }
 
@@ -119,8 +127,8 @@ body> :not(#spinner).loading {
 
 @media (min-width:758px){
     .title1 {
-        font-size: 2.4rem;
-        line-height: 2.8rem;
+        font-size: 1.9rem;
+        line-height: 2rem;
     }
 
     .title2 {
@@ -144,8 +152,9 @@ body> :not(#spinner).loading {
 
 @media (min-width:1024px){
     .title1 {
-        font-size: 2.7rem;
-        line-height: 3.5rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        letter-spacing: -5%;
     }
 
     .title2 {
@@ -158,23 +167,28 @@ body> :not(#spinner).loading {
         line-height: 2rem;
     }
 
+    .title1 .small_text{
+        font-size: 1.6rem;
+    }
+
 }
 
 @media (min-width:1280px){
     .title1 {
-        font-size: 3rem ;
-        line-height: 4.5rem;
+        font-size: 2.3rem ;
+        line-height: 3rem;
     }
     
     .title2 {
-        font-size: 1.6rem ;
-        line-height: 1.86rem;
+        font-size: 1rem ;
+        line-height: 1.6rem;
     }
     
     .title3 {
         font-size: 1.36rem;
         line-height: 2rem;
     }
+    
 
 }
 
@@ -292,7 +306,7 @@ body> :not(#spinner).loading {
 
 .flat-link {
     font-size: 0.875rem;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
     color: var(--app-color-primary);
 }
@@ -301,7 +315,7 @@ body> :not(#spinner).loading {
 /** bold & strong **/
 
 b {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 
@@ -412,10 +426,10 @@ b {
 /** Images **/
 
 .largers-images{
-    height: 900px;
     max-width: 100%;
-    min-height: 100vh;
     object-fit: cover;
+    min-height: 100%;
+    /* min-height: 100vh; */
 }
 
 @media (min-width: 0px) {
@@ -445,7 +459,7 @@ b {
 
     .title-type-1 {
         font-size: 1.25rem;
-        font-weight: 700;
+        font-weight: 500;
         line-height: 30px;
         letter-spacing: 0px;
     }

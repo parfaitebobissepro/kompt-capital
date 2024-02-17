@@ -16,7 +16,7 @@ header[role="banner"]::before {
     opacity: 0;
 }
 
-header[role="banner"].sticky::before {
+header[role="banner"]::before {
     top: 0;
     left: 0;
     right: 0;
@@ -128,7 +128,7 @@ header .navbar {
     font-size: 1.25rem;
     letter-spacing: 0px;
     line-height: 30px;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--app-color-text-gray);
     display: inline-block;
 }
@@ -217,16 +217,16 @@ header .navbar-nav .nav-item{
 }
 
 header .navbar-nav .nav-item a{
-    font-weight: 700;
+    font-weight: 500;
 }
-
+/* 
 header:not(.sticky) .navbar-nav .nav-item:nth-of-type(3) a,header:not(.sticky) .navbar-nav .nav-item:nth-of-type(4) a{
     color: var(--app-color-text-accent);
-}
+} */
 
-header:not(.sticky) .navbar-nav .nav-item:nth-of-type(3) a:hover,header:not(.sticky) .navbar-nav .nav-item:nth-of-type(4) a:hover{
+/* header:not(.sticky) .navbar-nav .nav-item:nth-of-type(3) a:hover,header:not(.sticky) .navbar-nav .nav-item:nth-of-type(4) a:hover{
     color: var(--app-color-text-primary);
-}
+} */
 
 .nav-item.active .nav-sub-menu-responsive {
     /* max-height: min-content; */
@@ -254,8 +254,8 @@ header:not(.sticky) .navbar-nav .nav-item:nth-of-type(3) a:hover,header:not(.sti
 }
 
 /* .sticky .rigth-bloc-header a:hover svg path{} */
-.rigth-bloc-header a:hover svg path{
-    fill: var(--app-color-text-primary);
+.responsive-menu-button svg path{
+    fill: var(--app-color-primary);
 }
 
 @media (min-width: 0px) {
@@ -270,8 +270,8 @@ header:not(.sticky) .navbar-nav .nav-item:nth-of-type(3) a:hover,header:not(.sti
         display: inline-block;
     }
     .responsive-menu-button svg {
-        width: 1.5em;
-        height: 1.5em;
+        width: 2em;
+        height: 2em;
         position: relative;
     }
     .rigth-bloc-header{
