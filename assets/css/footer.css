@@ -431,8 +431,8 @@ footer {
 
 .footer-head ul svg{
     user-select: none;
-    width: 1em;
-    height: 1em;
+    width: 1.2rem;
+    height: 1.2rem;
     display: inline-block;
     fill: var(--app-color-text-primary);
     flex-shrink: 0;
@@ -462,11 +462,16 @@ footer {
     }
 
     .contact-title{
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 2.42rem;
     }
 
     .footer-container .footer-title{
         font-size: 1.2rem;
+    }
+}
+@media (max-width:1268px) {
+    :root{
+        --app-regular-padding-container : 1rem;
     }
 }
