@@ -1,4 +1,4 @@
-.title1{
+.title1 {
     color: var(--app-color-text-accent);
 }
 
@@ -8,7 +8,7 @@
 }
 
 .after-section {
-    border-bottom: 0.1px solid #B4B4B4;
+    /* border-bottom: 0.1px solid #B4B4B4; */
     /* padding: 50px 0; */
 }
 
@@ -29,11 +29,16 @@
 }
 
 .photos-profil-list {
-    max-width: 1820px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
 }
+
+.senior-advisor-section .photos-profil-list {
+    max-width: 700px;
+}
+
 
 /*
 ----------our-team-section--------
@@ -51,7 +56,12 @@
 .our-team-image {
     width: 100%;
     height: 100%;
+    max-width: 550px;
     object-fit: contain;
+}
+
+.our-team-section .bloc-type-twins-large-second {
+    text-align: center;
 }
 
 /*
@@ -66,6 +76,7 @@
 .partner-contain-title,
 .rejoignez-nous-title {
     padding-bottom: 30px;
+    margin-top: 30px;
 }
 
 .rejoignez-nous-title {
@@ -86,9 +97,10 @@
 }
 
 .photo {
-    width: 240px;
-    height: 240px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 @media (max-width:1240px) {
@@ -231,11 +243,11 @@
 
 @media (max-width:962px) {
 
-    .team-modal .resp-img{
+    .team-modal .resp-img {
         margin-bottom: 0;
     }
 
-    .team-modal .resp-img img{
+    .team-modal .resp-img img {
         max-width: 40vw;
         height: unset;
         margin-left: auto;
