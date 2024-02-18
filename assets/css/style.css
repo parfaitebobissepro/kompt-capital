@@ -178,9 +178,22 @@ h1{
         font-weight: 400;
     }
 
+ 
+
+}
+
+@media (min-width:991px) and (max-width:1200px){
+    :root {
+        --app-font-size: 14px;
+    }
 }
 
 @media (min-width:1280px){
+
+    :root {
+        --app-font-size: 15px;
+    }
+
     .title1 {
         font-size: 1.7rem ;
         line-height: 3rem;
