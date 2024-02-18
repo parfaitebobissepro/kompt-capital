@@ -17,7 +17,7 @@ main{
 :root {
     /* app-fonts */
     --app-font-family: "Poppins", "system-ui", "Sans-Serif";
-    --app-font-size: 16px;
+    --app-font-size: 15px;
     --app-font-weight: 300;
     /* app-color */
     --app-color-primary: #AE9C86;
