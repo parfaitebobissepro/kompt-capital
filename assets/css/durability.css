@@ -1,7 +1,12 @@
 
+.title1{
+    color: var(--app-color-text-accent);
+}
+
 .after-section {
     border-bottom: 0.1px solid #BbBbBb;
     padding: 50px 0;
+    padding-top: 0;
 }
 
 .sous-titre{
@@ -28,7 +33,7 @@
 
 .durability-image{
     width: 90%;
-    margin-top: 125px;
+    /* margin-top: 125px; */
 }
 
 /*

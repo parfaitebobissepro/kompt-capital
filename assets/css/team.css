@@ -1,3 +1,7 @@
+.title1{
+    color: var(--app-color-text-accent);
+}
+
 .resp-img {
     justify-content: center;
     margin-bottom: 34px;
@@ -14,7 +18,7 @@
     font-weight: 500;
 }
 
-.sous-titre span{
+.sous-titre span {
     display: block;
     text-align: center;
 }
@@ -24,7 +28,7 @@
     padding-bottom: 30px;
 }
 
-.photos-profil-list{
+.photos-profil-list {
     max-width: 1820px;
     margin-left: auto;
     margin-right: auto;
@@ -47,8 +51,7 @@
 .our-team-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-
+    object-fit: contain;
 }
 
 /*
@@ -132,11 +135,13 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
     .senior-advisor-title,
     .partner-contain-title,
     .rejoignez-nous-title {
         padding-bottom: 15px;
     }
+
     .photos-profil-list {
         gap: 20px;
     }
@@ -146,10 +151,12 @@
     .resp-img {
         margin-bottom: 14px;
     }
+
     .photo {
         width: 14, 46%;
         height: 14, 46%;
     }
+
     .sous-titre {
         font-size: inherit;
     }
@@ -163,39 +170,83 @@
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 9999;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
-  }
-  
-  /* The Close Button */
-  .close {
+    width: 90%;
+}
+
+/* The Close Button */
+.close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+    text-align: right;
+}
+
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+}
+
+.team-modal .photos-profil-item {
+    display: flex;
+    justify-content: start;
+    gap: 3rem;
+}
+
+.team-modal .sous-titre span {
+    text-align: left;
+}
+
+.team-modal .paragraph {
+    margin-top: 39px;
+}
+
+@media (max-width:962px) {
+
+    .team-modal .resp-img{
+        margin-bottom: 0;
+    }
+
+    .team-modal .resp-img img{
+        max-width: 40vw;
+        height: unset;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .team-modal .photos-profil-item {
+        flex-direction: column;
+    }
+
+    .team-modal .sous-titre span {
+        text-align: center;
+    }
+}

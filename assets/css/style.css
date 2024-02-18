@@ -8,7 +8,8 @@
 
 /* Temp */
 main{
-    min-height: 115vh;
+    /* min-height: 115vh; */
+    padding-top: 63px;
 }
 
 /* end Temp */
