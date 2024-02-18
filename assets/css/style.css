@@ -17,7 +17,7 @@ main{
 :root {
     /* app-fonts */
     --app-font-family: "Poppins", "system-ui", "Sans-Serif";
-    --app-font-size: 14px;
+    --app-font-size: 18px;
     --app-font-weight: 300;
     /* app-color */
     --app-color-primary: #AE9C86;
@@ -83,6 +83,10 @@ body.loading {
 
 body> :not(#spinner).loading {
     display: none;
+}
+
+.highlighted {
+    color: var(--app-color-primary);
 }
 
 
