@@ -28,10 +28,18 @@
 }
 
 .strategy-image{
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: inline-block; */
+    /* height: 100%; */
     object-fit: cover;
 
+}
+
+.strategy-contain-section .bloc-type-twins-large-second{
+    display: flex;
+    justify-content: center;
 }
 
 /*
@@ -58,7 +66,7 @@
 
 .approch-contain-image {
     width: 100%;
-    height: 100%;
+    height: 90%;
     object-fit: contain;
     max-height: 434px;
 }
@@ -74,15 +82,16 @@
 */
 
 .heart-approch-section {
-    padding-top: 87px;
+    padding-top: 30px;
 }
 .heart-appro {
     font-size: 1rem;
     line-height: 1.71rem;
-    display: flex;
-    justify-content: center;
     text-align: center;
     margin-bottom: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .heart-approch-list{
@@ -104,15 +113,16 @@
 
 .heart-approch-item-title{
     color: var(--app-color-text-accent);
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 127.5%;
+    line-height: 1.27;
 }
 
 .heart-approch-item-details p{
     max-width: 100%;
     line-height: 126.3%;
     margin: 10px;
+    font-size: 0.9rem;
 }
 
 .heart-image {
