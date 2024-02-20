@@ -241,6 +241,10 @@
     margin-top: 39px;
 }
 
+.hidden {
+    display: none;
+}
+
 @media (max-width:962px) {
 
     .team-modal .resp-img {
