@@ -79,6 +79,18 @@
     margin-top: 30px;
 }
 
+.senior-advisor .item-title {
+    font-size: 1.2rem;
+}
+
+.senior-advisor .item-subtitle {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.partner-contain .item-subtitle {
+    font-weight: 400;
+}
 .rejoignez-nous-title {
     text-align: center;
     padding-bottom: 30px;
