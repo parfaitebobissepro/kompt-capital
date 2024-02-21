@@ -35,9 +35,10 @@
     margin-top: 30px;
 }
 
-.senior-advisor-section .photos-profil-list {
+.senior-advisor-section .photos-profil-list, .investment-team-section .photos-profil-list{
     max-width: 700px;
 }
+
 
 
 /*
@@ -250,12 +251,18 @@
 }
 
 .team-modal .paragraph {
-    margin-top: 39px;
+    margin-top: 0px;
 }
 
 .hidden {
     display: none;
 }
+
+
+.bloc-type-twins-large:not(.senior-advisor-section) .photos-profil-item{
+    cursor: pointer;
+}
+
 
 @media (max-width:962px) {
 
