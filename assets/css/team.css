@@ -251,7 +251,7 @@
 }
 
 .team-modal .paragraph {
-    margin-top: 0px;
+    margin-top: 15px;
 }
 
 .hidden {
@@ -263,6 +263,9 @@
     cursor: pointer;
 }
 
+.photo{
+    filter: grayscale(1);
+}
 
 @media (max-width:962px) {
 
