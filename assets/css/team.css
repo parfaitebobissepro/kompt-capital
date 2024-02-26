@@ -267,6 +267,10 @@
     filter: grayscale(1);
 }
 
+#photo1,#photo2{
+    filter: unset;
+}
+
 @media (max-width:962px) {
 
     .team-modal .resp-img {

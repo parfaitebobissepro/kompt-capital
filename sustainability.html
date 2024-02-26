@@ -131,9 +131,9 @@
                                         <span data-translatable> Strategies // Stratégies</span>
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="durability.html">
-                                        <span data-translatable>Durability // Durabilité</span>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="sustainability.html">
+                                        <span data-translatable>Sustainability // Durabilité</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -536,7 +536,7 @@
                         <ul class="footer-list">
                             <li><a href="team.html" data-translatable>Team // Équipe</a></li>
                             <li><a href="strategy.html" data-translatable>Strategies // Stratégies</a></li>
-                            <li><a href="durability.html" data-translatable>Durability // Durabilité</a></li>
+                            <li><a href="sustainability.html" data-translatable>Sustainability // Durabilité</a></li>
                         </ul>
                     </div>
                     <div>
@@ -756,8 +756,8 @@
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link active-ripple"
-                            href="durability.html">
-                            <span class="event-none" data-translatable>Durability // Durabilité</span>
+                            href="sustainability.html">
+                            <span class="event-none" data-translatable>Sustainability // Durabilité</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -773,80 +773,6 @@
                             </span>
                         </a>
                     </li>
-                    <!-- <hr>
-                <li class="nav-item">
-                    <div>
-                        <a class="nav-link outline-link btn" href="javascript:void(0);"> <span
-                                class="active-ripple">Formation &
-                                reconversion</span> <span class="active-ripple"><svg class="arrow-down-icon"
-                                    focusable="false" aria-hidden="true" viewBox="0 0 24 24"
-                                    data-testid="KeyboardArrowDownIcon">
-                                    <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
-                                </svg></span></a>
-                    </div>
-                    <ul class="nav-sub-menu-responsive">
-                        <li>
-                            <a href="javascript:void(0);" class="active-ripple">
-                                <img class="list-img event-none" src="./assets/images/spark.svg" alt="">
-                                <div class="event-none">
-                                    <span class="list-title">SPARK <span class="badge badge-info">Nouveau</span></span>
-                                    <p class="list-content">Fidélisez vos équipes</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="active-ripple">
-                                <img class="list-img event-none" src="./assets/images/boost.svg" alt="">
-                                <div class="event-none">
-                                    <span class="list-title">BOOST <span class="badge badge-info">Nouveau</span></span>
-                                    <p class="list-content">Boostez les compétences</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="active-ripple">
-                                <img class="list-img event-none" src="./assets/images/pivot.svg" alt="">
-                                <div class="event-none">
-                                    <span class="list-title">PIVOT <span class="badge badge-info">Nouveau</span></span>
-                                    <p class="list-content">Accompagnez vers de nouveaux métiers</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <hr>
-                <li class="nav-item">
-                    <div>
-                        <a class="nav-link outline-link btn" href="javascript:void(0);"> <span
-                                class="active-ripple">ALTERNANCE</span>
-                            <span class="active-ripple"><svg class="arrow-down-icon" focusable="false"
-                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="KeyboardArrowDownIcon">
-                                    <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
-                                </svg></span></a>
-                    </div>
-                    <ul class="nav-sub-menu-responsive">
-                        <li>
-                            <a href="javascript:void(0);" class="active-ripple">
-                                <img class="list-img event-none" src="./assets/images/uplift.svg" alt="">
-                                <div class="event-none">
-                                    <span class="list-title">UPLIFT <span class="badge badge-info">Nouveau</span></span>
-                                    <p class="list-content">Recrutez et formez les talents de demain grâce à l'aternance
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <hr>
-                <li class="nav-item">
-                    <a class="nav-link active-ripple" href="javascript:void(0);"><span class="event-none">Découvrir nos
-                            produits</span></a>
-                </li>
-                <hr>
-                <li class="nav-item">
-                    <a class="nav-link active-ripple" href="javascript:void(0);"><span class="event-none">Espace
-                            étudiants</span> </a>
-                </li> -->
                 </ul>
             </nav>
         </div>
@@ -874,83 +800,6 @@
     <script src="./assets/js/footer.js"></script>
     <script src="./assets/js/ripple.js"></script>
     <script src="./packages/dist/dom-i18n.min.js"></script>
-    <!-- <script>
-    domI18n({
-        selector: '[data-translatable]',
-        separator: ' // ',
-        languages: ['en', 'fr'],
-        defaultLanguage: 'fr'
-    });
-</script> -->
-    <script>
-    var enButton = document.getElementById('en-btn');
-    var frButton = document.getElementById('fr-btn');
-
-    var body = document.body;
-
-    // Get the active language from local storage or use the default language
-    var savedLanguage = localStorage.getItem('activeLanguage') || 'fr';
-
-    // Set the class on the body based on the active language
-    body.classList.add(savedLanguage);
-
-    // updateURL(savedLanguage);
-
-    var i18n = domI18n({
-        selector: '[data-translatable]',
-        separator: ' // ',
-        languages: ['en', 'fr'],
-        defaultLanguage: savedLanguage
-    });
-
-    // Set the initial language based on the savedLanguage
-    i18n.changeLanguage(savedLanguage);
-
-    enButton.onclick = function () {
-        i18n.changeLanguage('en');
-
-        // Save the active language to local storage
-        localStorage.setItem('activeLanguage', 'en');
-        // Update the class on the body
-        body.classList.remove('fr');
-        body.classList.add('en');
-
-        // Update the URL
-        // updateURL('en');
-    };
-
-    frButton.onclick = function () {
-        i18n.changeLanguage('fr');
-
-        // Save the active language to local storage
-        localStorage.setItem('activeLanguage', 'fr');
-
-        // Update the class on the body
-        body.classList.remove('en');
-        body.classList.add('fr');
-
-        // Update the URL
-        // updateURL('fr');
-    };
-
-    // function updateURL(language) {
-    // // Extract the current path from the URL
-    // var currentPath = window.location.pathname;
-
-    // // Check if there is an existing language code in the URL
-    // var regex = /^\/(en|fr)\//;
-    // var match = currentPath.match(regex);
-
-    // // If there is a match, replace the existing language code; otherwise, add a new one
-    // var newPath;
-    // if (match) {
-    //     newPath = currentPath.replace(regex, '/' + language + '/');
-    // } else {
-    //     newPath = '/' + language + currentPath;
-    // }
-
-    // // Use history.pushState to update the URL
-    // history.pushState({}, '', newPath);
-
+    <script src="./assets/js/translate.js"></script>
 </script>
 </html>

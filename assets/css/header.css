@@ -331,3 +331,11 @@ header:not(.sticky) .navbar-nav .nav-item:nth-of-type(3) a,header:not(.sticky) .
         /* margin-right: 70px; */
     }
 }
+
+body.en #en-btn a{
+    font-weight: 600;
+}
+
+body.fr #fr-btn a{
+    font-weight: 600;
+}
