@@ -1,5 +1,8 @@
 // Save the active language to local storage
 
+
+var isReaded = false;
+
 console.log(localStorage.getItem('isFirstTimeOpened'));
 
 if (localStorage.getItem('isFirstTimeOpened') == null) {

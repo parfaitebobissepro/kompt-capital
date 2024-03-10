@@ -401,10 +401,16 @@ cite {
     .positive-impact-seg1 .sous-titre {
         max-width: 100%;
     }
+
 }
 
 @media (min-width: 991px) {
     .positive-impact-seg1 .sous-titre {
+        max-width: 580px;
+    }
+
+    
+    .positive1 {
         max-width: 580px;
     }
 }
