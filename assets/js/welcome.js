@@ -6,7 +6,7 @@ if (localStorage.getItem('isFirstTimeOpened') == null) {
     localStorage.setItem('isFirstTimeOpened', 1);
     setTimeout(() => {
         openWelcomePopup();
-    }, 1000);
+    }, 3000);
 }
 
 

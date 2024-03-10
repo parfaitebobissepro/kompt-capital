@@ -293,12 +293,27 @@ cite {
 }
 
 
-@media (max-width:670px) {
+@media (max-width:992px) {
     .positive-impact-title .title1{
-        max-width: 250px;
+        max-width: 500px;
     }
 }
 
+@media (max-width:600px) {
+    .positive-impact-title .title1{
+        max-width: 220px;
+    }
+}
+
+@media (max-width:375px) {
+    .positive-impact-title .title1{
+        max-width: 190px;
+        font-size: 1.3rem;
+    }
+    .positive-impact-title{
+        top: 6rem;
+    }
+}
 
 @media (max-width:991.95px) {
     /* .positive-impact-section>.bloc-type-twins-large-second>img {
@@ -390,7 +405,7 @@ cite {
 
 @media (min-width: 991px) {
     .positive-impact-seg1 .sous-titre {
-        max-width: 480px;
+        max-width: 580px;
     }
 }
 
