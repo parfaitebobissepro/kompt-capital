@@ -1,9 +1,8 @@
-
-.title1{
+.title1 {
     color: var(--app-color-text-accent);
 }
 
-.durability-contain-section .title1{
+.durability-contain-section .title1 {
     color: var(--app-color-text-primary);
 }
 
@@ -13,8 +12,8 @@
     padding-top: 0;
 }
 
-.sous-titre{
-    font-size: 1.36rem ;
+.sous-titre {
+    font-size: 1.36rem;
     line-height: 1.86rem;
     font-weight: 500;
 }
@@ -27,15 +26,15 @@
 ----------durability-contain-section--------
 */
 
-.durability-contain-section{
+.durability-contain-section {
     align-items: center;
 }
 
-.durability-contain{
+.durability-contain {
     margin-top: 50px;
 }
 
-.durability-image{
+.durability-image {
     width: 60%;
     /* margin-top: 125px; */
 }
@@ -49,7 +48,7 @@
     flex-direction: row-reverse;
 }
 
-.exposition-risq{
+.exposition-risq {
     padding-left: var(--app-global-padding-default);
     margin-right: 50px;
 }
@@ -99,15 +98,16 @@
     align-items: start;
     justify-content: center;
 }
-.engagment-contain-section{
+
+.engagment-contain-section {
     flex-direction: column;
 }
 
-.engagment-contain-section .bloc-type-twins-large-first{
+.engagment-contain-section .bloc-type-twins-large-first {
     width: 100%;
 }
 
-.engagment-contain-section  .engagment-contain-imag {
+.engagment-contain-section .engagment-contain-imag {
     width: 100%;
 }
 
@@ -136,26 +136,26 @@
 */
 
 .demographie-section {
-    align-items: center;
+    align-items: start;
     flex-direction: row-reverse;
 }
 
-.demographie-section .bloc-type-twins-large-first{
+.demographie-section .bloc-type-twins-large-first {
     flex: 2;
 }
 
+.demographie-section .bloc-type-twins-large-second {}
+
 .demographie-section .demographie-image-group {
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: stretch;
 }
-
-.demographie-image .resp-img {
-    
-} 
 
 .demographie-image {
     width: 80px;
 }
+
 /*
 ----------column4-section--------
 */
@@ -174,8 +174,27 @@
     padding: 0;
 }
 
-.column4-section li:not(:last-child) {
-    border-bottom: 0.1em solid var(--app-color-text-primary);
+.column4-section li {
+    position: relative;
+    /* border-bottom: 1px solid transparent; */
+    padding: 10px 0;
+}
+
+.column4-section li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 7%;
+    height: 1px;
+    background: black;
+}
+
+.column4-container-list {
+    column-gap: 40px;
+    display: grid;
+    grid-template-areas: "one two three four";
+    grid-template-columns: 25%;
 }
 
 .column4-list strong {
@@ -186,122 +205,172 @@
     justify-content: flex-end;
 }
 
+.column4-container-list>div:nth-child(1) {
+    grid-area: one;
+}
+
+.column4-container-list>div:nth-child(2) {
+    grid-area: two;
+}
+
+.column4-container-list>div:nth-child(3) {
+    grid-area: three;
+}
+
+.column4-container-list>div:nth-child(4) {
+    grid-area: four;
+}
+
 .colum4-image {
     width: 50px;
 }
 
-@media (max-width:1240px){
+@media (max-width:1240px) {
     .sous-titre {
         font-size: inherit;
     }
+
     .resist-stress {
         margin-right: 0;
     }
 
-    .together-bloc{
+    .together-bloc {
         margin-top: 0;
     }
 }
 
-@media (min-width: 991.95px) and (max-width: 1104px){
-    .together-contain-section{
+@media (min-width: 991.95px) and (max-width: 1104px) {
+    .together-contain-section {
         margin-top: 0;
     }
 }
 
-@media (max-width:991.95px){
-    
+@media (max-width:991.95px) {
+
     .durability-contain-section {
         margin-top: 55px;
         align-items: stretch;
         flex-direction: column-reverse;
     }
+
     .durability-contain {
         margin-top: 0;
         margin-right: 0;
     }
-    .durability-image{
+
+    .durability-image {
         margin-top: 0;
     }
-    .exposition-risq{
+
+    .exposition-risq {
         padding: 0;
         margin: 0;
+    }
+
+    .column4-container-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "one four" "one four" "two four" "two three";
+    }
+
+    .demographie-section  {
+        flex-direction: column;
+    }
+
+    .demographie-section .demographie-image-group {
+        flex-direction: row;
     }
     .sous-titre {
         max-width: inherit;
     }
+
     .exposition-risq-section {
         flex-direction: column-reverse;
     }
-    .resist-stress-section{
+
+    .resist-stress-section {
         flex-direction: column-reverse;
     }
+
     .together-bloc {
         text-align: inherit;
         display: flex;
     }
+
     .ext {
-        flex-direction:row;
+        flex-direction: row;
     }
+
     .ext1 {
-        flex-direction:row-reverse;
+        flex-direction: row-reverse;
     }
+
     .together-contain1,
     .together-contain2 {
         width: 85%;
     }
+
     .engagment-contain {
         text-align: inherit;
     }
+
     .engagment-contain-seg2 {
         width: 100%;
     }
+
     .after-section {
         border-bottom: 0;
         padding-bottom: 0;
     }
+
     .spacing-responsive {
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
     .resp-img {
         top: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .column4-container-list {
+        display: block;
     }
 }
 
 @media (max-width:540px) {
     .together-bloc {
         display: flex;
-        flex-direction:column-reverse;
+        flex-direction: column-reverse;
     }
+
     .together-contain1,
     .together-contain2 {
         width: 100%;
     }
+
     .resp-img {
         top: 0;
     }
+
     .together-contain-image {
         width: 60%;
     }
-    .engagment-contain-section{
+
+    .engagment-contain-section {
         flex-direction: column-reverse;
     }
+
     .after-section {
         padding-top: 0;
     }
 
-    .together-contain-section{
+    .together-contain-section {
         margin-top: 20px;
         margin-bottom: 20px;
     }
 }
 
-@media (max-width:475px) {
+@media (max-width:475px) {}
 
-
-}
-
-@media (max-width:375px) {
-   
-}
+@media (max-width:375px) {}
