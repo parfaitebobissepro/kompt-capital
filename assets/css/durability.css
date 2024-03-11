@@ -131,6 +131,65 @@
     max-width: 70%;
 }
 
+/*
+----------demographie-section--------
+*/
+
+.demographie-section {
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.demographie-section .bloc-type-twins-large-first{
+    flex: 2;
+}
+
+.demographie-section .demographie-image-group {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.demographie-image .resp-img {
+    
+} 
+
+.demographie-image {
+    width: 80px;
+}
+/*
+----------column4-section--------
+*/
+
+.column4-section {
+    text-transform: uppercase;
+}
+
+.column4-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.column4-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column4-section li:not(:last-child) {
+    border-bottom: 0.1em solid var(--app-color-text-primary);
+}
+
+.column4-list strong {
+    font-weight: bold;
+}
+
+.column4-container-item .resp-img {
+    justify-content: flex-end;
+}
+
+.colum4-image {
+    width: 50px;
+}
+
 @media (max-width:1240px){
     .sous-titre {
         font-size: inherit;
