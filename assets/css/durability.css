@@ -132,6 +132,59 @@
 }
 
 /*
+----------our-expertise-section--------
+*/
+
+.our-expertise-section {
+    align-items: start;
+    justify-content: center;
+}
+
+.our-expertise-contain-title {
+    text-align: center;
+}
+
+.our-expertise-group {
+    column-gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "one two" "one two" "three two" "three four""five f";
+}
+
+.our-expertise-group>div:nth-child(1) {
+    grid-area: one;
+}
+
+.our-expertise-group>div:nth-child(2) {
+    grid-area: two;
+}
+
+.our-expertise-group>div:nth-child(3) {
+    grid-area: three;
+}
+
+.our-expertise-group>div:nth-child(4) {
+    grid-area: four;
+}
+
+.our-expertise-group>div:nth-child(5) {
+    grid-area: five;
+}
+
+.our-expertise-item1 {
+    align-items: start;
+}
+.our-expertise-item1-image {
+    width: 50px;
+
+}
+
+.our-expertise-details span {
+    font-weight: bold;
+}
+
+
+/*
 ----------demographie-section--------
 */
 
@@ -269,7 +322,7 @@
 
     .column4-container-list {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "one four" "one four" "two four" "two three";
+        grid-template-areas: "one two" "one two" "three two" "three four";
     }
 
     .demographie-section  {
@@ -336,6 +389,14 @@
     .column4-container-list {
         display: block;
     }
+    .our-expertise-group {
+        display: block;
+    }
+
+    .our-expertise-contain-title {
+        text-align: inherit;
+    }
+    
 }
 
 @media (max-width:540px) {
