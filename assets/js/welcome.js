@@ -2,6 +2,7 @@
 
 
 var isReaded = false;
+var isRoleSelected = false;
 
 let contentScrollable = document.querySelector('#welcomeModal .welocme-content');
 
@@ -14,7 +15,7 @@ contentScrollable.addEventListener('scroll', function() {
     // Vérification si l'utilisateur a fait défiler jusqu'en bas
     if (currentScrollPosition >= scrollableContentHeight) {
         isReaded = true;
-        console.log("Utilisateur a fait défiler jusqu'en bas.");
+        document.querySelector(".acceptButtonWelcome").disabled = !isReaded || !isRoleSelected;
         // Vous pouvez également effectuer d'autres actions ici en cas de défilement jusqu'en bas
     }
 });
@@ -59,6 +60,6 @@ function selectRole(element) {
     });
 
     element.classList.add('active');
-
-    document.querySelector(".acceptButtonWelcome").disabled = false && isReaded;
+    isRoleSelected = true;
+    document.querySelector(".acceptButtonWelcome").disabled = !isReaded || !isRoleSelected;
 }
