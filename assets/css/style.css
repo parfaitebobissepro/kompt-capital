@@ -27,7 +27,7 @@ main{
     --app-color-gray: "";
     --app-color-text-primary: #4F5955;
     --app-color-text-accent: #AE9C86;
-    --app-color-text-white: "";
+    --app-color-text-white: #FFF;
     --app-color-text-gray: rgb(97, 97, 97);
     --app-color-border-gray-ligth: #dad9dc;
     --app-color-border-gray-high-ligth: rgba(0, 0, 0, 0.04);
@@ -623,3 +623,6 @@ b {
         padding-right: 1rem !important;
     }
 }
+
+
+
