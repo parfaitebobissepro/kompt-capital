@@ -768,8 +768,6 @@ cite {
 }
 
 
-
-
 /*
 ----------our-expertise-section--------
 */
@@ -786,10 +784,15 @@ cite {
 }
 
 .our-expertise-group {
-    column-gap: 40px;
+    column-gap: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "one two" "one two" "three two" "three four""five f";
+    margin-top: 3rem;
+}
+
+.our-expertise-group>div{
+    min-height: 155px;
 }
 
 .our-expertise-group>div:nth-child(1) {

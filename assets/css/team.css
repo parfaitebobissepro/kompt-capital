@@ -40,6 +40,12 @@
 }
 
 
+.senior-advisor .know-contain-number{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
 
 /*
 ----------our-team-section--------

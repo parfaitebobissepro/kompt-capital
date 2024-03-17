@@ -7,7 +7,7 @@
 /** Variables **/
 
 /* Temp */
-main{
+main {
     /* min-height: 115vh; */
     padding-top: 63px;
 }
@@ -92,7 +92,7 @@ body> :not(#spinner).loading {
 
 /** titles **/
 
-h1{
+h1 {
     margin: 0;
 }
 
@@ -102,18 +102,19 @@ h1{
     font-weight: 500;
     font-size: 1.5rem;
 }
-@media (min-width:0){
+
+@media (min-width:0) {
     .title1 {
         font-weight: 700;
     }
 
-    .title1 .small_text{
+    .title1 .small_text {
         font-size: 1rem;
         font-weight: 400;
     }
 }
 
-@media (min-width:375px){
+@media (min-width:375px) {
     .title1 {
         font-size: 1.4rem;
         line-height: 2.5rem;
@@ -131,7 +132,7 @@ h1{
 
 }
 
-@media (min-width:758px){
+@media (min-width:758px) {
     .title1 {
         font-size: 1.5rem;
         line-height: 2rem;
@@ -149,14 +150,14 @@ h1{
 
 }
 
-@media (max-width:900px){
-    :root{
+@media (max-width:900px) {
+    :root {
         --app-font-size: 12px;
     }
 
 }
 
-@media (min-width:1024px){
+@media (min-width:1024px) {
     .title1 {
         font-size: 1.6rem;
         line-height: 2.5rem;
@@ -173,42 +174,42 @@ h1{
         line-height: 2rem;
     }
 
-    .title1 .small_text{
+    .title1 .small_text {
         font-size: 1rem;
         font-weight: 400;
     }
 
- 
+
 
 }
 
-@media (min-width:991px) and (max-width:1200px){
+@media (min-width:991px) and (max-width:1200px) {
     :root {
         --app-font-size: 14px;
     }
 }
 
-@media (min-width:1280px){
+@media (min-width:1280px) {
 
     :root {
         --app-font-size: 15px;
     }
 
     .title1 {
-        font-size: 1.7rem ;
+        font-size: 1.7rem;
         line-height: 3rem;
     }
-    
+
     .title2 {
-        font-size: 1rem ;
+        font-size: 1rem;
         line-height: 1.6rem;
     }
-    
+
     .title3 {
         font-size: 1.36rem;
         line-height: 2rem;
     }
-    
+
 
 }
 
@@ -221,7 +222,7 @@ h1{
 
 /** Padding **/
 
-.padding-default{
+.padding-default {
     padding-left: var(--app-global-padding-default);
     padding-right: var(--app-global-padding-default);
 }
@@ -445,7 +446,7 @@ b {
 
 /** Images **/
 
-.largers-images{
+.largers-images {
     max-width: 100%;
     object-fit: cover;
     min-height: 100%;
@@ -453,7 +454,7 @@ b {
 }
 
 @media (min-width: 0px) {
-    .padding-default{
+    .padding-default {
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -466,12 +467,12 @@ b {
         padding-right: 0;
     }
 
-    html .padding-default{
+    html .padding-default {
         padding-left: 1rem;
         padding-right: 1rem;
     }
 
-    
+
 
     h3 {
         line-height: 36px;
@@ -501,15 +502,15 @@ b {
 
 
 @media (min-width: 2000px) {
-    .largers-images{
-        min-height: min(901px,100vh);
+    .largers-images {
+        min-height: min(901px, 100vh);
     }
 }
 
 
 
 /* welcomeModal */
-#welcomeModal{
+#welcomeModal {
     z-index: 9999999;
     background-color: rgba(0, 0, 0, 0.4);
     align-items: center;
@@ -522,14 +523,14 @@ b {
     opacity: 0;
 }
 
-#welcomeModal .modal-content{
+#welcomeModal .modal-content {
     border-radius: 0;
     border: none;
     padding: 4rem 2rem !important;
     max-width: 1200px;
 }
 
-#welcomeModal .welocme-content{
+#welcomeModal .welocme-content {
     height: 50vh;
     overflow: auto;
     padding: 2rem;
@@ -538,16 +539,16 @@ b {
     text-align: justify;
 }
 
-#welcomeModal .welocme-content h4:nth-of-type(2){
+#welcomeModal .welocme-content h4:nth-of-type(2) {
     margin-top: 2rem;
 }
 
-#welcomeModal .your-are{
+#welcomeModal .your-are {
     display: inline-block;
     margin-top: 1rem;
 }
 
-.container-role-visiteur{
+.container-role-visiteur {
     padding-left: 0;
     list-style: none;
     margin-top: 1rem;
@@ -559,7 +560,7 @@ b {
     column-gap: 20px;
 }
 
-.container-role-visiteur  button{
+.container-role-visiteur button {
     border: 2px solid rgba(36, 35, 35, 0.4);
     background-color: transparent;
     font-size: 1.2rem;
@@ -567,21 +568,21 @@ b {
     padding: 0.7rem 5rem;
 }
 
-.container-role-visiteur button.active{
+.container-role-visiteur button.active {
     border-color: var(--app-color-primary);
     color: var(--app-color-primary);
 }
 
-#welcomeModal .certificat-text{
+#welcomeModal .certificat-text {
     text-align: center;
     font-size: 0.9rem;
 }
 
-#welcomeModal .container-button{
+#welcomeModal .container-button {
     text-align: center;
 }
 
-.button-type-1{
+.button-type-1 {
     margin-left: auto;
     margin-right: auto;
     padding: 0.7rem 2rem;
@@ -590,33 +591,34 @@ b {
     border: none;
 }
 
-.button-type-1:not(:disabled):hover{
+.button-type-1:not(:disabled):hover {
     color: white;
     background-color: var(--app-color-primary);
 }
 
 @media (max-width:600px) {
-    #welcomeModal{
+    #welcomeModal {
         padding-left: 0.3rem;
         padding-right: 0.3rem;
     }
-    #welcomeModal .role-visiteur button{
+
+    #welcomeModal .role-visiteur button {
         padding-left: 2rem;
         padding-right: 2rem;
         font-size: 1rem;
     }
 
-    #welcomeModal .welocme-content{
+    #welcomeModal .welocme-content {
         padding-top: 1rem;
         padding-bottom: 1rem;
 
     }
 
-    #welcomeModal .welocme-content{
+    #welcomeModal .welocme-content {
         height: 30vh;
     }
 
-    #welcomeModal .modal-content{
+    #welcomeModal .modal-content {
         padding-top: 2rem !important;
         padding-bottom: 2rem !important;
         padding-left: 1rem !important;
@@ -626,3 +628,58 @@ b {
 
 
 
+
+
+
+/*
+----------table-contain-section--------
+*/
+.table-contain-section {
+    align-items: start;
+    justify-content: center;
+}
+
+.table-contain-section .bloc-type-twins-large {}
+
+.table-contain-title {
+    text-align: center;
+}
+
+table {
+    background: #e9ecee;
+    border-radius: 0.25em;
+    border-collapse: collapse;
+    margin: 1em;
+    width: 100%;
+}
+
+th {
+    border-bottom: 1px solid #364043;
+    color: var(--app-color-text-accent);
+    font-size: 0.85em;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    text-align: center;
+}
+
+td {
+    color: #fff;
+    font-weight: 400;
+    padding: 0.65em 1em;
+}
+
+tbody tr:hover {
+    background: #c2c4c5;
+}
+
+table .btn {
+    color: white;
+    background-color: green;
+    width: auto;
+    padding: 10px;
+
+}
+
+table tr td{
+    text-align: center;
+}
