@@ -4,21 +4,27 @@
 var isReaded = false;
 var isRoleSelected = false;
 
+document.addEventListener('DOMContentLoaded', addListenerScroll, false);
+
 let contentScrollable = document.querySelector('#welcomeModal .welocme-content');
 
-contentScrollable.addEventListener('scroll', function() {
-    // Calcul de la hauteur totale du contenu à l'intérieur de l'élément scrollable
-    var scrollableContentHeight = contentScrollable.scrollHeight;
-    // Calcul de la position actuelle du défilement
-    var currentScrollPosition = contentScrollable.scrollTop + contentScrollable.clientHeight;
+function addListenerScroll(){
+    contentScrollable.addEventListener('scroll', function() {
+        // Calcul de la hauteur totale du contenu à l'intérieur de l'élément scrollable
+        var scrollableContentHeight = contentScrollable.scrollHeight;
+        // Calcul de la position actuelle du défilement
+        var currentScrollPosition = contentScrollable.scrollTop + contentScrollable.clientHeight;
+    
+        // Vérification si l'utilisateur a fait défiler jusqu'en bas
+        if (currentScrollPosition >= scrollableContentHeight) {
+            isReaded = true;
+            document.querySelector(".acceptButtonWelcome").disabled = !isReaded || !isRoleSelected;
+            // Vous pouvez également effectuer d'autres actions ici en cas de défilement jusqu'en bas
+        }
+    });
+}
 
-    // Vérification si l'utilisateur a fait défiler jusqu'en bas
-    if (currentScrollPosition >= scrollableContentHeight) {
-        isReaded = true;
-        document.querySelector(".acceptButtonWelcome").disabled = !isReaded || !isRoleSelected;
-        // Vous pouvez également effectuer d'autres actions ici en cas de défilement jusqu'en bas
-    }
-});
+
 
 if (localStorage.getItem('isFirstTimeOpened') == null) {
     localStorage.setItem('isFirstTimeOpened', 1);

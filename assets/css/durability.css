@@ -32,7 +32,6 @@
     column-gap: 8rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-
 }
 
 .risk-exposure-bloc{
@@ -279,6 +278,10 @@
 }
 
 @media (max-width:991.95px) {
+
+    .resp-img2{
+        flex-wrap: wrap;
+    }
 
     main img{
         margin-bottom: 3rem;
