@@ -16,9 +16,9 @@ function addListenerScroll(){
         var currentScrollPosition = contentScrollable.scrollTop + contentScrollable.clientHeight;
     
         // Vérification si l'utilisateur a fait défiler jusqu'en bas
-        if (currentScrollPosition >= scrollableContentHeight) {
+        if (currentScrollPosition == scrollableContentHeight) {
             isReaded = true;
-            document.querySelector(".acceptButtonWelcome").disabled = !isReaded || !isRoleSelected;
+            document.querySelector(".acceptButtonWelcome").disabled = !isRoleSelected;
             // Vous pouvez également effectuer d'autres actions ici en cas de défilement jusqu'en bas
         }
     });
@@ -27,7 +27,6 @@ function addListenerScroll(){
 
 
 if (localStorage.getItem('isFirstTimeOpened') == null) {
-    localStorage.setItem('isFirstTimeOpened', 1);
     setTimeout(() => {
         openWelcomePopup();
     }, 3000);
@@ -54,6 +53,8 @@ function closeWelcomePopup() {
             modal.style.opacity = "0";
         }
     }
+
+    localStorage.setItem('isFirstTimeOpened', 1);
 }
 
 
@@ -67,5 +68,5 @@ function selectRole(element) {
 
     element.classList.add('active');
     isRoleSelected = true;
-    document.querySelector(".acceptButtonWelcome").disabled = !isReaded || !isRoleSelected;
+    document.querySelector(".acceptButtonWelcome").disabled = !isRoleSelected;
 }
