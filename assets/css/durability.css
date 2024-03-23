@@ -19,8 +19,37 @@
 }
 
 .resp-img {
+    display: flex;
     justify-content: center;
+    width: 100%;
 }
+
+.resp-img2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.risk-exposure-bloc{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.resp-img2 img{
+    /* max-width: calc(50% - 20px); */
+    height: unset;
+    min-width: min(385px,90%);
+    max-width: 250px;
+    object-fit: contain;
+}
+
+
 
 /*
 ----------durability-contain-section--------
@@ -45,13 +74,16 @@
 
 .exposition-risq-section {
     align-items: center;
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 
-.exposition-risq {
-    padding-left: var(--app-global-padding-default);
-    margin-right: 50px;
+.bloc-type-twins-large-first.approch-border{
+    text-align: center;
 }
+
+/* .exposition-risq {
+    padding-left: var(--app-global-padding-default);
+} */
 
 .exposition-risq-image {
     width: 60%;
@@ -127,9 +159,9 @@
 }
 
 .engagment-contain-image {
-    /* width: 700px;
-    max-width: 70%; */
-    max-height: 70vh;
+    max-height: 90vh;
+    max-width: 90%;
+    margin-top: 2rem;
 }
 
 /*
@@ -248,10 +280,14 @@
 
 @media (max-width:991.95px) {
 
+    main img{
+        margin-bottom: 3rem;
+    }
+
     .durability-contain-section {
         margin-top: 55px;
         align-items: stretch;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .durability-contain {
@@ -285,11 +321,11 @@
     }
 
     .exposition-risq-section {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .resist-stress-section {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .together-bloc {
@@ -310,7 +346,7 @@
         width: 85%;
     }
 
-    .engagment-contain {
+    .engagment-contain, .bloc-type-twins-large-first.approch-border{
         text-align: inherit;
     }
 
@@ -360,7 +396,7 @@
     }
 
     .engagment-contain-section {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .after-section {

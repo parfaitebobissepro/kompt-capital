@@ -268,26 +268,12 @@ Example:homepage fifth bloc
     flex-wrap: wrap;
 }
 
-.senior-advisor .know-contain-number{
-    height: 150px;
-    width: 150px;
-    background-color: var(--app-color-primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: var(--app-color-text-white);
-    font-size: 1.8rem;
-    font-weight: 500;
-}
 
 .senior-advisor .know-contain-item{
     display: flex;
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    min-width: 217px;
 }
 
 .senior-advisor .know-contain-details{

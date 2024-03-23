@@ -1,0 +1,38 @@
+tbody td a {
+    font-weight: 600 !important;
+}
+
+tbody td a.btn:hover {
+    background-color: var(--app-color-primary);
+}
+
+tbody td a svg {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+tbody td a svg path {
+    fill: #FFF;
+}
+
+
+h1 {
+    margin-top: 3rem;
+}
+
+.table-contain {
+    overflow: auto;
+    margin-bottom: 4rem;
+}
+
+
+table {
+    min-width: 775px;
+}
+
+@media (min-width:775px) {
+    main {
+        min-height: 60vh;
+    }
+}

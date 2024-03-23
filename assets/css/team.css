@@ -39,12 +39,25 @@
     max-width: 700px;
 }
 
-
 .senior-advisor .know-contain-number{
     display: flex;
     align-items: center;
     text-align: center;
+
+    height: 150px;
+    width: 150px;
+    /* background-color: var(--app-color-primary); */
+    border: 1px solid var(--app-color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--app-color-text-accent);
+    font-size: 1.8rem;
+    font-weight: 500;
 }
+
 
 
 /*
@@ -296,5 +309,23 @@
 
     .team-modal .sous-titre span {
         text-align: center;
+    }
+}
+
+
+/** Ajouts **/
+
+.know-contain-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width:400px) {
+    .know-contain-list{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }

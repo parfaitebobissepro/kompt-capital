@@ -558,19 +558,28 @@ b {
     display: flex;
     justify-content: center;
     column-gap: 20px;
+    flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .container-role-visiteur button {
     border: 2px solid rgba(36, 35, 35, 0.4);
     background-color: transparent;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--app-color-text-primary);
-    padding: 0.7rem 5rem;
+    padding: 1rem 1rem;
+    width: 100%;
+    min-width: 220px;
 }
 
 .container-role-visiteur button.active {
     border-color: var(--app-color-primary);
     color: var(--app-color-primary);
+}
+
+.role-visiteur{
+    flex: 1;
+    height: 100%;
 }
 
 #welcomeModal .certificat-text {
@@ -581,6 +590,7 @@ b {
 #welcomeModal .container-button {
     text-align: center;
 }
+
 
 .button-type-1 {
     margin-left: auto;
@@ -595,6 +605,13 @@ b {
     color: white;
     background-color: var(--app-color-primary);
 }
+
+@media (max-width:815px) {
+    .container-role-visiteur{
+        flex-direction: column;
+    }
+}
+
 
 @media (max-width:600px) {
     #welcomeModal {
@@ -646,11 +663,12 @@ b {
 }
 
 table {
-    background: #e9ecee;
+    /* background: #e9ecee; */
     border-radius: 0.25em;
     border-collapse: collapse;
-    margin: 1em;
     width: 100%;
+    margin: 0;
+    margin-top: 4rem;
 }
 
 th {
@@ -663,9 +681,10 @@ th {
 }
 
 td {
-    color: #fff;
     font-weight: 400;
     padding: 0.65em 1em;
+    color: var(--app-color-text-primary);
+    border-bottom: 1px solid #364043;
 }
 
 tbody tr:hover {
@@ -674,10 +693,8 @@ tbody tr:hover {
 
 table .btn {
     color: white;
-    background-color: green;
+    background-color: var(--app-color-primary);;
     width: auto;
-    padding: 10px;
-
 }
 
 table tr td{
