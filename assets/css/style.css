@@ -601,6 +601,11 @@ b {
     border: none;
 }
 
+.button-type-1:not(:disabled){
+    color: white;
+    background-color: var(--app-color-primary);
+}
+
 .button-type-1:not(:disabled):hover {
     color: white;
     background-color: var(--app-color-primary);
