@@ -147,9 +147,9 @@
 
 @media (max-width:991.95px) {
     .our-team-section {
-        margin-top: 55px;
+        margin-top: 2rem;
         align-items: stretch;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .our-team {

@@ -20,8 +20,8 @@
 
 .strategy-contain-section{
     align-items: stretch;
-    margin-top: 20px;
-    margin-bottom: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
     flex-direction: column;
 }
 
@@ -76,7 +76,7 @@
 
 .strategy-image2{
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     object-fit: contain;
@@ -89,6 +89,7 @@
     justify-content: center;
     gap: 4rem;
     margin-top: 3rem;
+    flex-wrap: wrap;
 }
 
 /*
@@ -247,13 +248,15 @@
 @media (max-width:991.95px){
     .strategy-contain-section {
         margin-top: 2rem;
+        margin-bottom: 2rem;
         align-items: stretch;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .strategy-contain {
         margin-top: 0;
         margin-left: 0;
         margin-right: 0;
+        padding-top: 0 !important;
     }
     .strategy-image {
         margin-top: 20px;
@@ -386,10 +389,6 @@
     }
     .our-expertise-group {
         display: block;
-    }
-
-    .our-expertise-contain-title {
-        text-align: inherit;
     }
     
     .our-expertise-group>div{

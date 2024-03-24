@@ -27,7 +27,6 @@
 .resp-img2 {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     width: 100%;
     column-gap: 8rem;
     margin-top: 2rem;
@@ -288,7 +287,7 @@
     }
 
     .durability-contain-section {
-        margin-top: 55px;
+        margin-top: 2rem;
         align-items: stretch;
         flex-direction: column;
     }

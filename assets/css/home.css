@@ -232,8 +232,16 @@ cite {
 /*
 ----------target-sector-section--------
 */
+
+
 .target-sector-section {
     /* top: -50px; */
+}
+
+
+.target-sector{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .target-serctor-image {
