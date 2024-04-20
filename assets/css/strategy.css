@@ -46,6 +46,9 @@
     /* object-fit: cover; */
 
 }
+#strategy-image-first{
+    max-width: 486px;
+}
 
 .strategy-contain-section .bloc-type-twins-large-second{
     display: flex;
