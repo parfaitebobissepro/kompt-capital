@@ -795,7 +795,7 @@ cite {
     column-gap: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "one two" "one two" "three two" "three four""five f";
+    grid-template-areas: "one two" "one two" "three four" "three four";
     margin-top: 3rem;
 }
 
@@ -817,10 +817,6 @@ cite {
 
 .our-expertise-group>div:nth-child(4) {
     grid-area: four;
-}
-
-.our-expertise-group>div:nth-child(5) {
-    grid-area: five;
 }
 
 .our-expertise-item1 {
