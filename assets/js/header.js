@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     // function to check screen width and add show class if needed
     function checkScreenWidth() {
-        if (window.matchMedia("(min-width: 992px)").matches) {
+        if (window.matchMedia("(min-width: 1240px)").matches) {
             targetDiv.show();
         } else {
             targetDiv.hide();
