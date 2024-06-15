@@ -20,6 +20,7 @@ main{
 .positive-impact .positive1 {
     line-height: inherit;
     margin: 0;
+    font-size: 1.8rem;
 }
 
 /* .positive-impact-title{
@@ -32,7 +33,7 @@ main{
 
 
 .positive-impact-seg1 .sous-titre {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.86rem;
     font-weight: 500;
     margin: 30px 0 30px 0;
@@ -272,7 +273,7 @@ cite {
 
 @media (max-width:1240px) {
     .positive-impact-seg1 .sous-titre {
-        font-size: inherit;
+        font-size: 1.4rem;
     }
 
     .know-contain {
