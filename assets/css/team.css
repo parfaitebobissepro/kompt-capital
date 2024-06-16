@@ -44,8 +44,8 @@
     align-items: center;
     text-align: center;
 
-    height: 150px;
-    width: 150px;
+    height: 105px;
+    width: 105px;
     /* background-color: var(--app-color-primary); */
     border: 1px solid var(--app-color-primary);
     border-radius: 50%;
@@ -97,6 +97,10 @@
 .rejoignez-nous-title {
     padding-bottom: 30px;
     margin-top: 30px;
+}
+
+.partner-contain-title > p {
+    text-align: center;
 }
 
 .senior-advisor .item-title {
@@ -317,15 +321,28 @@
 
 .know-contain-list{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 
-@media (max-width:400px) {
+@media (max-width:510px) {
     .know-contain-list{
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+}
+
+.logo-list .flex-1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+
+.logo-list .resp-img{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
 }
