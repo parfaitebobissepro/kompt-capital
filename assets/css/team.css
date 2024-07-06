@@ -282,9 +282,9 @@
 }
 
 
-.bloc-type-twins-large:not(.senior-advisor-section) .photos-profil-item{
+/* .bloc-type-twins-large:not(.senior-advisor-section) .photos-profil-item{
     cursor: pointer;
-}
+} */
 
 .photo{
     filter: grayscale(1);
@@ -338,6 +338,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 0;
+    justify-content: center;
 }
 
 
