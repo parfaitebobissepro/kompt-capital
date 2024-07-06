@@ -320,7 +320,7 @@ cite {
         font-size: 1.3rem;
     }
     .positive-impact-title{
-        top: 6rem;
+        top: 5rem;
     }
 }
 
@@ -331,7 +331,7 @@ cite {
 
     .positive-impact-title {
         position: absolute;
-        top: 8rem;
+        top: 7rem;
         z-index: 2;
     }
 
