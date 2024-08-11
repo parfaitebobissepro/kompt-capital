@@ -259,6 +259,7 @@ cite {
     align-items: center;
     flex-direction: row-reverse;
     /* top: -50px; */
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 

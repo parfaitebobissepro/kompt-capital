@@ -46,8 +46,10 @@
     /* object-fit: cover; */
 
 }
+
 #strategy-image-first{
-    max-width: 486px;
+    /* max-width: 486px; */
+    width: 60%;
 }
 
 .strategy-contain-section .bloc-type-twins-large-second{
@@ -341,9 +343,10 @@
     column-gap: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "one two" "one two" "three two" "three four""five f";
+    grid-template-areas: "one two" "one two" "three two" "three four";
     margin-top: 3rem;
-    max-width: 800px;
+    /* max-width: 800px; */
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -398,6 +401,15 @@
         min-height: 130px;
     }
 }
+
+
+@media (max-width: 500px) {
+    
+    #strategy-image-first{
+        min-width: 80vw;
+    }
+}
+
 
 
 .our-expertise-contain-seg1 p{
