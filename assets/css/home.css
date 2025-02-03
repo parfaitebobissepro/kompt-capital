@@ -295,6 +295,10 @@ cite {
     }
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 @media (min-width: 991.95px) and (max-width: 1104px) {
     .know-contain {
         /* padding-left: 15px; */
