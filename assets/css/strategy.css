@@ -335,6 +335,14 @@
     padding-bottom: 4rem;
 }
 
+.impact_investing {
+    padding-bottom: 0rem;
+}
+
+.detail_strategy {
+    padding: 0;
+}
+
 .our-expertise-contain-title {
     text-align: center;
 }
@@ -385,6 +393,10 @@
 
 .our-expertise-details span {
     font-weight: bold;
+}
+
+.our-expertise-detail span {
+    font-weight: inherit;
 }
 
 
