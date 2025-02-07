@@ -1,3 +1,12 @@
+.our-funds-contain-seg1 p{
+    margin-bottom: 0;
+   }
+   
+   
+.our-funds-contain-seg1 p:last-of-type{
+    margin-top: 0;
+}
+
 tbody td a {
     font-weight: 600 !important;
 }

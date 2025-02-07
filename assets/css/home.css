@@ -256,24 +256,37 @@ cite {
 */
 
 .geographical-area-section {
-    /* align-items: center; */
     flex-direction: reverse;
     /* top: -50px; */
-    margin-top: 50px;
     margin-bottom: 50px;
+    align-items: stretch;
+    
 }
 
-.geographical-area-imag {
-    text-align: start;
+.geographical-area-one {
+    margin-top: 50px; 
+}
+
+
+.geographical-area h5{
+    color: #ffffff;
+}
+
+
+.geographical-area-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.our-pillars  {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    align-items: center;
     justify-content: center;
-}
-.geographical-area-imag h5{
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.geographical-area-detail {
-    max-width: 777px;
 }
 
 
@@ -314,15 +327,17 @@ cite {
         font-size: 2.16rem;
     }
     
-    .financial_entrepreneurs strong {
-        font-weight: 600;
-    }
 }
 
 
 @media (max-width:992px) {
     .positive-impact-title .title1{
         max-width: 500px;
+    }
+
+    .financial_entrepreneurs strong {
+        font-size: 1.4rem;
+        font-weight: 600;
     }
 }
 
@@ -340,12 +355,9 @@ cite {
     .positive-impact-title{
         top: 5rem;
     }
-    .financial_entrepreneurs .positive1 {
-        font-size: 1.3rem;
-    }
-    
     .financial_entrepreneurs strong {
         font-weight: 550;
+        font-size: 1.3rem;
     }
 
 }
@@ -390,6 +402,13 @@ cite {
         object-fit: cover;
     }
 
+    .geographical-area-image {
+        max-height: 40vh;
+        min-height: unset;
+        width: 100%;
+        object-fit: cover;
+    }
+
     .bloc-type-twins-large>.bloc-type-twins-large-second {
         width: 100%;
     }
@@ -424,9 +443,6 @@ cite {
         text-align: justify;
     }
 
-    .geographical-area-image {
-        max-width: 60vw;
-    }
 }
 
 
