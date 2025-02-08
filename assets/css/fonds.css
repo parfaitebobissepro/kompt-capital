@@ -7,6 +7,23 @@
     margin-top: 0;
 }
 
+.fixed-income {
+    padding: 20px;
+}
+
+.button.btn {
+    background-color:  rgb(218, 217, 220);
+}
+
+ button.btn:hover {
+    background-color: var(--app-color-primary);
+}
+
+.btn.active {
+    color: white;
+    background-color: var(--app-color-primary);
+}
+
 tbody td a {
     font-weight: 600 !important;
 }
