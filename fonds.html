@@ -62,13 +62,13 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="impact.html">
+                                <a class="nav-link" href="credit.html">
                                     <span data-translatable>Credit // Crédit</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="capital_markets.html">
-                                    <span data-translatable>Capital Markets strategies // Capital Markets</span>
+                                    <span data-translatable>Capital Markets strategies // Capital Markets strategies</span>
                                 </a>
                             </li>
                             <li class="nav-item active">
@@ -116,12 +116,14 @@
             <div class="positive-impact-title">
                 <h1 class="title1 highlighted" data-translatable >Our range of funds // Notre gamme de fonds </h1>
 
-                    <div data-translatable style="text-align: center;">
-                        <p> <b>FIXED INCOME       EQUITY</b> <br> Past performance is no guarantee of future results.
-                            All investments present risks, including the risk of capital loss. Please refer to the fund's DIC and prospectus, available in the “Documents” section of each share class, before making any final investment decision.</p>
-                        //
-                        <p> <b>GESTION OBLIGATAIRE       GESTION ACTIONS</b>  <br>  Les performances passées ne préjugent pas des performances futures.
-                            Tout investissement présente des risques, y compris le risque de perte en capital. Veuillez-vous référer aux DIC et aux prospectus des fonds, disponibles dans la section « Documents » de chaque classe de part, avant de prendre toute décision finale d'investissement.</p>
+                    <div style="text-align: center;">
+                        <div class="fixed-income">
+                            <button class="btn" onclick="filterTable('obligataire',this)" data-translatable data-type="obligataire">FIXED INCOME // GESTION OBLIGATAIRE</button>
+                        <button class="btn" onclick="filterTable('actions',this)" data-translatable data-type="actions">EQUITY // GESTION ACTIONS</button>
+                        </div>
+                         <p data-translatable> 
+                            Past performance is no guarantee of future results. All investments present risks, including the risk of capital loss. Please refer to the fund's DIC and prospectus, available in the “Documents” section of each share class, before making any final investment decision. // Les performances passées ne préjugent pas des performances futures. Tout investissement présente des risques, y compris le risque de perte en capital. Veuillez-vous référer aux DIC et aux prospectus des fonds, disponibles dans la section « Documents » de chaque classe de part, avant de prendre toute décision finale d'investissement.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -133,17 +135,17 @@
                                 <thead>
                                     <tr>
                                         <th data-translatable>Name of Funds // Nom du fonds</th>
-                                        <th>AuM</th>
+                                        <th>VL</th>
                                         <th data-translatable>NAV</th>
                                         <th data-translatable>PERF YTD</th>
                                         <th data-translatable>PERF 1AN</th>
-                                        <th data-translatable>PERF 3ANS</th>
-                                        <th data-translatable>PERF 5ANS</th>
+                                        <th data-translatable>Net assets(in millions) // Actif net(en millions)</th>
+                                        <th data-translatable>Code ISIN</th>
                                         <th data-translatable>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr data-type="actions">
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -166,7 +168,7 @@
                                             </a>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr data-type="obligataire">
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -189,7 +191,7 @@
                                             </a>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr data-type="obligataire">
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -279,9 +281,9 @@
                     </span>
                     <ul class="footer-list">
                         <li><a href="index.html" data-translatable>Home // Accueil</a></li>
-                        <li><a href="impact.html" data-translatable>Impact // Impact</a></li>
-                        <li><a href="fonds.html" data-translatable>Funds // Fonds</a></li>
-                        <li><a href="team.html" data-translatable>Talents // Talents</a></li>
+                        <li><a href="credit.html" data-translatable>Credit // Crédit</a></li>
+                        <li><a href="capital_markets.html" data-translatable>Capital Markets strategies // Capital Markets strategies</a></li>
+                        <li><a href="fonds.html" data-translatable>Our Funds // Nos fonds</a></li>
                     </ul>
                 </div>
                 <div>
@@ -332,18 +334,18 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active-ripple"
-                        href="impact.html">
-                        <span class="event-none" data-translatable>Impact // Impact</span>
+                        href="credit.html">
+                        <span class="event-none" data-translatable>Credit // Crédit</span>
+                    </a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link active-ripple" href="capital_markets.html">
+                        <span class="event-none" data-translatable>Capital Markets strategies // Capital Markets strategies</span>
                     </a>
                 </li>
                  <li class="nav-item active">
                     <a class="nav-link active-ripple" href="fonds.html">
-                        <span class="event-none" data-translatable>Funds // Fonds</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active-ripple" href="team.html">
-                        <span class="event-none" data-translatable>Talents // Talents</span>
+                        <span class="event-none" data-translatable>Our Funds // Nos fonds</span>
                     </a>
                 </li>
             </ul>
@@ -397,5 +399,31 @@
 <script src="./packages/dist/dom-i18n.min.js"></script>
 <script src="./assets/js/translate.js"></script>
 <script src="./assets/js/welcome.js"></script>
+<script>
+    // Fonction pour afficher uniquement les lignes correspondant au type choisi
+    function filterTable(type, button) {
+        // Récupérer toutes les lignes du tableau
+        let rows = document.querySelectorAll("table tbody tr");
+        
+        // Parcourir chaque ligne
+        rows.forEach(row => {
+            // Récupérer l'attribut "data-type" de la ligne
+            let rowType = row.getAttribute("data-type");
+            
+            // Vérifier si la ligne correspond au type choisi
+            if (rowType === type) {
+                row.style.display = "";  // Afficher la ligne
+            } else {
+                row.style.display = "none";  // Masquer la ligne
+            }
+        });
 
+        // Réinitialiser la couleur de tous les boutons
+        let buttons = document.querySelectorAll("button");
+        buttons.forEach(btn => btn.classList.remove("active"));
+        
+        // Ajouter la classe "active" au bouton sélectionné
+        button.classList.add("active");
+    }
+</script>
 </html>
