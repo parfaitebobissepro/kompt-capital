@@ -3,6 +3,8 @@
     Date: 04/04/2023
 ***/
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 /** Variables **/
 
@@ -16,7 +18,7 @@ main {
 
 :root {
     /* app-fonts */
-    --app-font-family: "Poppins", "system-ui", "Sans-Serif";
+    --app-font-family: "Roboto Condensed", "Poppins", "system-ui", "Sans-Serif";
     --app-font-size: 15px;
     --app-font-weight: 300;
     /* app-color */
