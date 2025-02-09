@@ -400,29 +400,20 @@
 <script src="./assets/js/translate.js"></script>
 <script src="./assets/js/welcome.js"></script>
 <script>
-    // Fonction pour afficher uniquement les lignes correspondant au type choisi
     function filterTable(type, button) {
-        // Récupérer toutes les lignes du tableau
         let rows = document.querySelectorAll("table tbody tr");
         
-        // Parcourir chaque ligne
         rows.forEach(row => {
-            // Récupérer l'attribut "data-type" de la ligne
             let rowType = row.getAttribute("data-type");
-            
-            // Vérifier si la ligne correspond au type choisi
             if (rowType === type) {
-                row.style.display = "";  // Afficher la ligne
+                row.style.display = "";
             } else {
-                row.style.display = "none";  // Masquer la ligne
+                row.style.display = "none";
             }
         });
 
-        // Réinitialiser la couleur de tous les boutons
         let buttons = document.querySelectorAll("button");
         buttons.forEach(btn => btn.classList.remove("active"));
-        
-        // Ajouter la classe "active" au bouton sélectionné
         button.classList.add("active");
     }
 </script>
