@@ -82,10 +82,11 @@ footer {
 
 .footer-list li a {
     color: var(--app-color-text-primary);
-    /* font-size: 0.875rem; */
+    font-size: 0.9rem;
     letter-spacing: 0px;
     line-height: 22px;
     /* font-weight: 300; */
+    text-transform: uppercase;
 }
 
 

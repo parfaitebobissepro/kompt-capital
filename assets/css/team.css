@@ -2,6 +2,34 @@
     color: var(--app-color-text-accent);
 }
 
+/** Start update live **/
+
+.our-team-title h1.title1:nth-of-type(1){
+    font-weight: 900;
+    text-transform: uppercase;
+    color: inherit;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+    .our-team-title h1.title1:nth-of-type(1){
+        font-size: 1.5rem;
+    }
+}
+
+
+.item-title{
+    font-size: 1rem;
+}
+
+.photos-profil-item-name svg{
+    width: 20px;
+    height: 20px;
+}
+
+/** End update live **/
+
 .resp-img {
     justify-content: center;
     margin-bottom: 34px;
@@ -29,14 +57,19 @@
 }
 
 .photos-profil-list {
-    max-width: 1200px;
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+    gap: 100px;
+}
+
+.capital-markets-team .photos-profil-list{
+    gap: 0px;
 }
 
 .senior-advisor-section .photos-profil-list, .investment-team-section .photos-profil-list{
-    max-width: 700px;
+    /* max-width: 700px; */
 }
 
 .senior-advisor .know-contain-number{
