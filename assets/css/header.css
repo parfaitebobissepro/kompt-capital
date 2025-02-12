@@ -215,8 +215,10 @@ header .navbar {
 }
 
 header .navbar-nav .nav-item{
-    min-width: 122px;
+    /* min-width: 122px; */
     text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 header .navbar-nav .nav-item a{
