@@ -61,7 +61,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    gap: 100px;
+    row-gap: 50px;
 }
 
 .capital-markets-team .photos-profil-list{
@@ -225,6 +225,7 @@
 
     .photos-profil-list {
         gap: 20px;
+        row-gap: 50px;
     }
 }
 
