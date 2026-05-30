@@ -399,6 +399,9 @@
     font-weight: inherit;
 }
 
+.our-expertise-details p {
+    text-align: justify;
+}
 
 
 @media (max-width: 768px) {
@@ -431,6 +434,9 @@
 
 .our-expertise-contain-seg1 p:last-of-type{
     margin-top: 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .our-expertise-contain-title strong{
