@@ -258,9 +258,13 @@ cite {
 .geographical-area-section {
     flex-direction: reverse;
     /* top: -50px; */
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     align-items: stretch;
     
+}
+
+.geographical-area-detail{
+    margin-bottom: 50px;
 }
 
 .geographical-area-one {
@@ -336,6 +340,9 @@ cite {
 @media (max-width:992px) {
     .positive-impact-title .title1{
         max-width: 500px;
+        background: rgba(255, 255, 255);
+        padding: 10px 15px;
+        border-radius: 5px;
     }
 
     .financial_entrepreneurs strong {
@@ -346,7 +353,7 @@ cite {
 
 @media (max-width:600px) {
     .positive-impact-title .title1{
-        max-width: 220px;
+        max-width: 300px;
     }
 }
 
